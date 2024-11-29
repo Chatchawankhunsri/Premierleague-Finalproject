@@ -285,6 +285,11 @@ th {
     display: inline-block;
     margin-right: 2px;
 }
+.match-date {
+    text-align: center; /* Center the text */
+    color: #4B0082; /* Match the color to your theme */
+    margin-top: 20px; /* Space above the date */
+}
 .form-w { background-color: #00ff85; }
 .form-d { background-color: #adadad; }
 .form-l { background-color: #ff2882; }
