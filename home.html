@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Premier League Navbar</title>
+    <title>Premier League</title>
+    <link rel="icon" type="image/x-icon" href="./View/pl-main-logo.png">
+    <link rel="stylesheet" href="style.css">
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -121,7 +123,75 @@
         .secondary-nav a:hover::after {
             transform: scaleX(1);
         }
-        
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+        .container {
+            display: flex;
+            max-width: 1200px;
+            margin: 20px auto;
+            gap: 20px;
+        }
+        .recent-matches {
+            flex: 1;
+        }
+        .match {
+            background-color: white;
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 15px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .match h3 {
+            margin-top: 0;
+            color: #37003c;
+            font-size: 0.9em;
+            text-transform: uppercase;
+        }
+        .match-details {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .team {
+            display: flex;
+            align-items: center;
+        }
+        .team img {
+            width: 25px;
+            height: 25px;
+            margin-right: 8px;
+        }
+        .team span {
+            font-size: 0.9em;
+        }
+        .score {
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+        .latest-news {
+            flex: 2;
+        }
+        .news-item {
+            background-color: white;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .news-item h2 {
+            margin-top: 0;
+            color: #37003c;
+        }
+        .news-item img {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
     </style>
 </head>
 <body>
@@ -169,5 +239,69 @@
             <li><a href="/awards.html">Awards</a></li>
         </ul>
     </nav>
+
+    <div class="container">
+        <div class="recent-matches">
+            <div class="match">
+                <h3>Europa League</h3>
+                <div class="match-details">
+                    <div class="team">
+                        <img src="./View/ManchesterUnited.png" alt="Team 1">
+                        <span>MUN</span>
+                    </div>
+                    <span class="score">3 - 2</span>
+                    <div class="team">
+                        <img src="./View/BOD.png" alt="Team 2">
+                        <span>BOD</span>
+                    </div>
+                </div>
+            </div>
+            <div class="match">
+                <h3>Conference League</h3>
+                <div class="match-details">
+                    <div class="team">
+                        <img src="./View/FCH.png" alt="Team 3">
+                        <span>FCH</span>
+                    </div>
+                    <span class="score">0 - 2</span>
+                    <div class="team">
+                        <img src="./View/Chelsea.png" alt="Team 4">
+                        <span>CHE</span>
+                    </div>
+                </div>
+            </div>
+            <div class="match">
+                <h3>Premier League</h3>
+                <div class="match-details">
+                    <div class="team">
+                        <img src="./View/Brighton.png" alt="Team 5">
+                        <span>BHA</span>
+                    </div>
+                    <span class="score">03:00</span>
+                    <div class="team">
+                        <img src="./View/Southampton.png" alt="Team 6">
+                        <span>SOU</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="latest-news">
+            <div class="news-item">
+                <div class="image-container">
+                <img src="./View/news1.png" alt="News 1">
+                </div>
+                <h2>Get the latest team news from Fridat's press conference</h2>
+                <p>find out what managers have to say ahead of Matchweek 13 in the Premier League</p>
+            </div>
+            <div class="news-item">
+                <div class="image-container">
+                <img src="./View/news2.png" alt="News 2">
+                </div>
+                <h2>Feature</h2>
+                <p>Ten BIG questions for the weekend's matches</p>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
