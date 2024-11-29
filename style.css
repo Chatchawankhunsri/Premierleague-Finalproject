@@ -135,6 +135,7 @@ body {
     padding: 15px;
     margin-bottom: 15px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    text-align: center; 
 }
 .match h3 {
     margin-top: 0;
@@ -146,22 +147,32 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 10px 0; /* */
 }
 .team {
     display: flex;
     align-items: center;
+    /* margin: 0 20px;  */
+
 }
 .team img {
-    width: 25px;
-    height: 25px;
-    margin-right: 8px;
+    /* width: 30px;
+    height: 30px;
+    margin-right: 8px; */
+    width: 40px; /* Adjust image size as needed */
+    height: auto;
+    margin-right: 10px; /* Space between image and team name */
 }
 .team span {
     font-size: 0.9em;
 }
 .score {
     font-weight: bold;
-    font-size: 1.1em;
+    font-size: 18px;
+    text-align: center;
+    width: 60px;
+    margin: 0 auto;
+
 }
 .latest-news {
     flex: 2;
