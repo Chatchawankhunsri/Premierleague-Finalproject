@@ -10,14 +10,26 @@
             margin: 0;
             padding: 0;
         }
-        .navbar {
+        .club-logos {
+            background-color: white;
+            padding: 5px 0;
+            text-align: center;
+            overflow-x: auto;
+            white-space: nowrap;
+        }
+        .club-logos img {
+            height: 30px;
+            margin: 0 8px;
+        }
+        .main-nav {
             background-color: #37003c;
             display: flex;
             align-items: center;
             padding: 10px 20px;
+            position: relative;
         }
         .logo {
-            width: 100px;
+            width: 60px;
             margin-right: 20px;
         }
         .nav-links {
@@ -27,7 +39,6 @@
             padding: 0;
         }
         .nav-item {
-            position: relative;
             margin-right: 20px;
         }
         .nav-link {
@@ -37,59 +48,126 @@
             padding: 10px;
             display: inline-block;
         }
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            background-color: #5f0068;
-            min-width: 160px;
-            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-            z-index: 1;
-        }
-        .dropdown-content a {
-            color: white;
-            padding: 12px 16px;
-            text-decoration: none;
-            display: block;
-        }
-        .nav-item:hover .dropdown-content {
-            display: block;
-        }
         .sign-in {
             margin-left: auto;
             background-color: white;
-            color: #37003c;
-            padding: 10px 20px;
+            color: black;
+            padding: 5px 15px;
             border-radius: 20px;
             text-decoration: none;
             font-weight: bold;
         }
+        .search-icon {
+            color: white;
+            font-size: 20px;
+            margin-left: 15px;
+        }
+        .secondary-nav {
+            background-color: #ffffff;
+            padding: 10px 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .secondary-nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+        .secondary-nav li {
+            margin: 0 15px;
+        }
+        .secondary-nav a {
+            text-decoration: none;
+            color: gray;
+            font-weight: bold;
+        }
+        .nav-item {
+    position: relative;
+}
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -10px;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(to right, #00ff85, #0ff);
+            transform: scaleX(0);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .nav-link:hover::after {
+            transform: scaleX(1);
+        }
+
+        .secondary-nav li {
+            position: relative;
+        }
+
+        .secondary-nav a::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -10px;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(to right, #00ff85, #0ff);
+            transform: scaleX(0);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .secondary-nav a:hover::after {
+            transform: scaleX(1);
+        }
+        
     </style>
 </head>
 <body>
-    <nav class="navbar">
+    <div class="club-logos">
+        <a href="https://www.arsenal.com/"><img src="./View/Arsenal.png" alt="Arsenal"></a>
+        <a href="https://www.avfc.co.uk/"><img src="./View/AstonVilla.png" alt="Aston Villa"></a>
+        <a href="https://www.afcb.co.uk/"><img src="./View/Bournemouth.png" alt="Bournemouth"></a>
+        <a href="https://www.brentfordfc.com/"><img src="./View/Brentford.png" alt="Brentford"></a>
+        <a href="https://www.brightonandhovealbion.com/"><img src="./View/Brighton.png" alt="Brighton"></a>
+        <a href="https://www.chelseafc.com/"><img src="./View/Chelsea.png" alt="Chelsea"></a>
+        <a href="https://www.cpfc.co.uk/"><img src="./View/CrystalPalace.png" alt="Crystal Palace"></a>
+        <a href="https://www.evertonfc.com/"><img src="./View/Everton.png" alt="Everton"></a>
+        <a href="https://www.fulhamfc.com/"><img src="./View/Fulham.png" alt="Fulham"></a>
+        <a href="https://www.ipswichtown.com/"><img src="./View/IpswichTown.png" alt="Ipswich Town"></a>
+        <a href="https://www.lcfc.com/"><img src="./View/LeicesterCity.png" alt="Leicester City"></a>
+        <a href="https://www.liverpoolfc.com/"><img src="./View/Liverpool.png" alt="Liverpool"></a>
+        <a href="https://www.mancity.com/"><img src="./View/ManchesterCity.png" alt="Manchester City"></a>
+        <a href="https://www.manutd.com/"><img src="./View/ManchesterUnited.png" alt="Manchester United"></a>
+        <a href="https://www.nufc.co.uk/"><img src="./View/NewcastleUnited.png" alt="Newcastle United"></a>
+        <a href="https://www.nottinghamforest.co.uk/"><img src="./View/NottinghamForest.png" alt="Nottingham Forest"></a>
+        <a href="https://www.southamptonfc.com/"><img src="./View/Southampton.png" alt="Southampton"></a>
+        <a href="https://www.tottenhamhotspur.com/"><img src="./View/TottenhamHotspur.png" alt="Tottenham Hotspur"></a>
+        <a href="https://www.whufc.com/"><img src="./View/WestHam.png" alt="West Ham United"></a>
+        <a href="https://www.wolves.co.uk/"><img src="./View/Wolverhampton.png" alt="Wolverhampton Wanderers"></a>
+    </div>
+    <nav class="main-nav">
         <img src="./View/pl-main-logo.png" alt="Premier League Logo" class="logo">
         <ul class="nav-links">
-            <li class="nav-item">
-                <a href="#" class="nav-link">Premier League</a>
-                <div class="dropdown-content">
-                    <a href="/home.html">Home</a>
-                    <a href="/fixtures.html">Fixtures</a>
-                    <a href="/results.html">Results</a>
-                    <a href="/tables.html">Tables</a>
-                    <a href="/transfers.html">Transfers</a>
-                    <a href="/stats.html">Stats</a>
-                    <a href="/news.html">News</a>
-                    <a href="/video.html">Video</a>
-                    <a href="/clubs.html">Clubs</a>
-                    <a href="/awards.html">Awards</a>
-                </div>
-            </li>
-            <li class="nav-item"><a href="#" class="nav-link">Fantasy</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Football & Community</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">About</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">More</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Premier League</a></li>
         </ul>
         <a href="#" class="sign-in">Sign in</a>
+        <span class="search-icon">&#128269;</span>
+    </nav>
+    <nav class="secondary-nav">
+        <ul>
+            <li><a href="/home.html">Home</a></li>
+            <li><a href="/fixtures.html">Fixtures</a></li>
+            <li><a href="/results.html">Results</a></li>
+            <li><a href="/tables.html">Tables</a></li>
+            <li><a href="/transfers.html">Transfers</a></li>
+            <li><a href="/stats.html">Stats</a></li>
+            <li><a href="/news.html">News</a></li>
+            <li><a href="/news.html">Video</a></li>
+            <li><a href="/clubs.html">Clubs</a></li>
+            <li><a href="/awards.html">Awards</a></li>
+        </ul>
     </nav>
 </body>
 </html>
