@@ -301,6 +301,53 @@ th {
     color: #4B0082; /* Match the color to your theme */
     margin-top: 20px; /* Space above the date */
 }
+.transfer-section {
+    padding: 20px;
+    background-color: #f8f8f8;
+    text-align: center;
+}
+.window-status {
+    margin: 20px 0;
+    font-size: 16px;
+}
+.transfers {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+.transfer {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+    
+.transfer img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+    
+.transfer h4 {
+    font-size: 16px;
+    margin: 10px 0;
+}
+    
+.transfer a {
+    text-decoration: none;
+    color: #007bff;
+}
+    
+.footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #3e3e3e;
+    color: white;
+    }
+    
+    
+
+
 .form-w { background-color: #00ff85; }
 .form-d { background-color: #adadad; }
 .form-l { background-color: #ff2882; }
