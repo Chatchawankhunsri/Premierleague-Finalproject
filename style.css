@@ -340,11 +340,6 @@ th {
     flex-wrap: wrap;
 }
 .transfer {
-    /* border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 10px;
-    background-color: #f9f9f9;
-    text-align: center; */
     background: white;
     border: 1px solid #ccc;
     border-radius: 8px;
