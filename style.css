@@ -152,13 +152,13 @@ body {
 .team {
     display: flex;
     align-items: center;
-    /* margin: 0 20px;  */
+    margin: 0 20px; 
 
 }
 .team img {
-    /* width: 30px;
+    width: 30px;
     height: 30px;
-    margin-right: 8px; */
+    margin-right: 8px;
     width: 40px; /* Adjust image size as needed */
     height: auto;
     margin-right: 10px; /* Space between image and team name */
@@ -421,3 +421,36 @@ th {
 .form-w { background-color: #00ff85; }
 .form-d { background-color: #adadad; }
 .form-l { background-color: #ff2882; }
+
+.transfer-watch-banner {
+    background-image: linear-gradient(to right, #00b7ff, #5c4bff);
+    background-size: cover;
+    color: white;
+    padding: 20px;
+    position: relative;
+}
+
+.content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.seasons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+button {
+    background-color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 8px 16px;
+    font-size: 14px;
+    cursor: pointer;
+}
