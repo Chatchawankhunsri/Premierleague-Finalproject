@@ -1,0 +1,86 @@
+.container {
+    display: flex;
+    max-width: 1200px;
+    margin: 20px auto;
+    gap: 20px;
+}
+
+.recent-matches {
+    flex: 1;
+}
+
+.match {
+    background-color: white;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    text-align: center; 
+}
+
+.match h3 {
+    margin-top: 0;
+    color: #37003c;
+    font-size: 0.9em;
+    text-transform: uppercase;
+}
+
+.match-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px 0; /* */
+}
+
+.team {
+    display: flex;
+    align-items: center;
+    margin: 0 20px; 
+
+}
+.team img {
+    width: 30px;
+    height: 30px;
+    margin-right: 8px;
+    width: 40px; /* Adjust image size as needed */
+    height: auto;
+    margin-right: 10px; /* Space between image and team name */
+}
+.team span {
+    font-size: 0.9em;
+}
+
+.score {
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    width: 60px;
+    margin: 0 auto;
+}
+
+.match-date {
+    text-align: center; /* Center the text */
+    color: #4B0082; /* Match the color to your theme */
+    margin-top: 20px; /* Space above the date */
+}
+
+.latest-news {
+    flex: 2;
+}
+
+.news-item {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.news-item h2 {
+    margin-top: 0;
+    color: #37003c;
+}
+.news-item img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}

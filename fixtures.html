@@ -5,257 +5,368 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Premier League</title>
     <link rel="icon" type="image/x-icon" href="./View/pl-main-logo.png">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-nav.css">
+    <link rel="stylesheet" href="style-fixtures.css">
     <style>
-.fixtures-banner {
-    background-image: linear-gradient(to right, #00b7ff, #5c4bff);
-    background-size: cover;
-    color: white;
-    padding: 20px;
-    position: relative;
-}
-
-.fixtures-content {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.fixtures-title {
-    font-size: 48px;
-    margin-bottom: 20px;
-}
-
-.fixtures-filter {
-    margin-bottom: 20px;
-}
-
-.fixtures-button {
-    background-color: white;
-    border: none;
-    border-radius: 20px;
-    padding: 8px 16px;
-    font-size: 14px;
-    cursor: pointer;
-    color: #37003c;
-}
-
-.fixtures-list {
-    background-color: white;
-    border-radius: 8px;
-    padding: 20px;
-    color: #333;
-}
-
-.fixture-date {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 15px;
-}
-
-.pl-logo-purple {
-    filter: brightness(0) saturate(100%) invert(9%) sepia(64%) saturate(5989%) hue-rotate(275deg) brightness(87%) contrast(108%);
-    height: 30px;
-}
-
-.fixture {
-    display: flex;
-    align-items: center;
-    padding: 10px 0;
-    border-bottom: 1px solid #eee;
-}
-
-.team {
-    display: flex;
-    align-items: center;
-    width: 150px;
-}
-
-.team img {
-    width: 30px;
-    margin-right: 10px;
-}
-
-.match-time {
-    font-weight: bold;
-    width: 60px;
-    text-align: center;
-}
-
-.match-stadium {
-    display: flex;
-    align-items: center;
-    flex-grow: 1;
-    justify-content: center;
-}
-
-.stadium-icon {
-    width: 20px;
-    height: 20px;
-    margin-right: 8px;
-}
-
-.match-broadcast {
-    display: flex;
-    align-items: center;
-}
-
-.broadcast-logo {
-    height: 20px;
-    margin-right: 10px;
-}
-
-.quick-view {
-    background-color: #37003c;
-    color: white;
-    border: none;
-    padding: 5px 10px;
-    cursor: pointer;
-    border-radius: 4px;
-}
 
     </style>
 </head>
 <body>
-    <body>
-        <div class="club-logos">
-            <a href="https://www.arsenal.com/"><img src="./View/Arsenal.png" alt="Arsenal"></a>
-            <a href="https://www.avfc.co.uk/"><img src="./View/AstonVilla.png" alt="Aston Villa"></a>
-            <a href="https://www.afcb.co.uk/"><img src="./View/Bournemouth.png" alt="Bournemouth"></a>
-            <a href="https://www.brentfordfc.com/"><img src="./View/Brentford.png" alt="Brentford"></a>
-            <a href="https://www.brightonandhovealbion.com/"><img src="./View/Brighton.png" alt="Brighton"></a>
-            <a href="https://www.chelseafc.com/"><img src="./View/Chelsea.png" alt="Chelsea"></a>
-            <a href="https://www.cpfc.co.uk/"><img src="./View/CrystalPalace.png" alt="Crystal Palace"></a>
-            <a href="https://www.evertonfc.com/"><img src="./View/Everton.png" alt="Everton"></a>
-            <a href="https://www.fulhamfc.com/"><img src="./View/Fulham.png" alt="Fulham"></a>
-            <a href="https://www.ipswichtown.com/"><img src="./View/IpswichTown.png" alt="Ipswich Town"></a>
-            <a href="https://www.lcfc.com/"><img src="./View/LeicesterCity.png" alt="Leicester City"></a>
-            <a href="https://www.liverpoolfc.com/"><img src="./View/Liverpool.png" alt="Liverpool"></a>
-            <a href="https://www.mancity.com/"><img src="./View/ManchesterCity.png" alt="Manchester City"></a>
-            <a href="https://www.manutd.com/"><img src="./View/ManchesterUnited.png" alt="Manchester United"></a>
-            <a href="https://www.nufc.co.uk/"><img src="./View/NewcastleUnited.png" alt="Newcastle United"></a>
-            <a href="https://www.nottinghamforest.co.uk/"><img src="./View/NottinghamForest.png" alt="Nottingham Forest"></a>
-            <a href="https://www.southamptonfc.com/"><img src="./View/Southampton.png" alt="Southampton"></a>
-            <a href="https://www.tottenhamhotspur.com/"><img src="./View/TottenhamHotspur.png" alt="Tottenham Hotspur"></a>
-            <a href="https://www.whufc.com/"><img src="./View/WestHam.png" alt="West Ham United"></a>
-            <a href="https://www.wolves.co.uk/"><img src="./View/Wolverhampton.png" alt="Wolverhampton Wanderers"></a>
-        </div>
-        <nav class="main-nav">
-            <img src="./View/pl-main-logo.png" alt="Premier League Logo" class="logo">
-            <ul class="nav-links">
-                <li class="nav-item"><a href="#" class="nav-link">Premier League</a></li>
+    <div class="club-logos">
+        <a href="https://www.arsenal.com/"><img src="./View/Arsenal.png" alt="Arsenal"></a>
+        <a href="https://www.avfc.co.uk/"><img src="./View/AstonVilla.png" alt="Aston Villa"></a>
+        <a href="https://www.afcb.co.uk/"><img src="./View/Bournemouth.png" alt="Bournemouth"></a>
+        <a href="https://www.brentfordfc.com/"><img src="./View/Brentford.png" alt="Brentford"></a>
+        <a href="https://www.brightonandhovealbion.com/"><img src="./View/Brighton.png" alt="Brighton"></a>
+        <a href="https://www.chelseafc.com/"><img src="./View/Chelsea.png" alt="Chelsea"></a>
+        <a href="https://www.cpfc.co.uk/"><img src="./View/CrystalPalace.png" alt="Crystal Palace"></a>
+        <a href="https://www.evertonfc.com/"><img src="./View/Everton.png" alt="Everton"></a>
+        <a href="https://www.fulhamfc.com/"><img src="./View/Fulham.png" alt="Fulham"></a>
+        <a href="https://www.ipswichtown.com/"><img src="./View/IpswichTown.png" alt="Ipswich Town"></a>
+        <a href="https://www.lcfc.com/"><img src="./View/LeicesterCity.png" alt="Leicester City"></a>
+        <a href="https://www.liverpoolfc.com/"><img src="./View/Liverpool.png" alt="Liverpool"></a>
+        <a href="https://www.mancity.com/"><img src="./View/ManchesterCity.png" alt="Manchester City"></a>
+        <a href="https://www.manutd.com/"><img src="./View/ManchesterUnited.png" alt="Manchester United"></a>
+        <a href="https://www.nufc.co.uk/"><img src="./View/NewcastleUnited.png" alt="Newcastle United"></a>
+        <a href="https://www.nottinghamforest.co.uk/"><img src="./View/NottinghamForest.png" alt="Nottingham Forest"></a>
+        <a href="https://www.southamptonfc.com/"><img src="./View/Southampton.png" alt="Southampton"></a>
+        <a href="https://www.tottenhamhotspur.com/"><img src="./View/TottenhamHotspur.png" alt="Tottenham Hotspur"></a>
+        <a href="https://www.whufc.com/"><img src="./View/WestHam.png" alt="West Ham United"></a>
+        <a href="https://www.wolves.co.uk/"><img src="./View/Wolverhampton.png" alt="Wolverhampton Wanderers"></a>
+    </div>
+    <nav class="main-nav">
+        <img src="./View/pl-main-logo.png" alt="Premier League Logo" class="logo">
+        <ul class="nav-links">
+            <li class="nav-item"><a href="#" class="nav-link">Premier League</a></li>
+        </ul>
+        <a href="#" class="sign-in">Sign in</a>
+        <span class="search-icon">&#128269;</span>
+    </nav>
+    <div class="sticky-nav-container">
+        <nav class="secondary-nav">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="fixtures.html">Fixtures</a></li>
+                <li><a href="results.html">Results</a></li>
+                <li><a href="tables.html">Tables</a></li>
+                <li><a href="transfers.html">Transfers</a></li>
+                <li><a href="stats.html">Stats</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="video.html">Video</a></li>
+                <li><a href="clubs.html">Clubs</a></li>
+                <li><a href="awards.html">Awards</a></li>
             </ul>
-            <a href="#" class="sign-in">Sign in</a>
-            <span class="search-icon">&#128269;</span>
         </nav>
-        <div class="sticky-nav-container">
-            <nav class="secondary-nav">
-                <ul>
-                    <li><a href="home.html">Home</a></li>
-                    <li><a href="fixtures.html">Fixtures</a></li>
-                    <li><a href="results.html">Results</a></li>
-                    <li><a href="tables.html">Tables</a></li>
-                    <li><a href="transfers.html">Transfers</a></li>
-                    <li><a href="stats.html">Stats</a></li>
-                    <li><a href="news.html">News</a></li>
-                    <li><a href="video.html">Video</a></li>
-                    <li><a href="clubs.html">Clubs</a></li>
-                    <li><a href="awards.html">Awards</a></li>
-                </ul>
-            </nav>
-        </div>
+    </div>
 
-        <div class="fixtures-banner">
-            <div class="fixtures-content">
-                <h1 class="fixtures-title">Fixtures</h1>
-                <div class="fixtures-filter">
-                    <button class="fixtures-button">First Team</button>
+    <div class="fixtures-banner">
+        <div class="fixtures-content">
+            <h1 class="fixtures-title">Fixtures</h1>
+            <div class="fixtures-filter">
+                <button class="fixtures-button">First Team</button>
+            </div>
+            
+            <!-- Saturday Fixtures -->
+            <div class="fixtures-list">
+                <div class="fixture-date">
+                    <h2>Saturday 14 December 2024</h2>
+                    <img src="./View/premier-league-logo-header-full.png" alt="Premier League" class="pl-logo-purple">
                 </div>
                 
-                <div class="fixtures-list">
-                    <div class="fixture-date">
-                        <h2>Saturday 14 December 2024</h2>
-                        <img src="./View/premier-league-logo-header-full.png" alt="Premier League" class="league-logo pl-logo-purple">
+                <div class="fixture">
+                    <div class="team home">
+                        <img src="./View/Arsenal.png" alt="Arsenal">
+                        <span>Arsenal</span>
                     </div>
-                    
-                    <div class="fixture">
-                        <div class="team home">
-                            <img src="./View/Arsenal.png" alt="Arsenal">
-                            <span>Arsenal</span>
-                        </div>
-                        <div class="match-time">00:30</div>
-                        <div class="team away">
-                            <img src="./View/Everton.png" alt="Everton">
-                            <span>Everton</span>
-                        </div>
-                        <div class="match-stadium">
-                            <img src="./View/stadium-icon.png" alt="Stadium" class="stadium-icon">
-                            <span>Emirates Stadium, London</span>
-                        </div>
-                        <div class="match-broadcast">
-                            <img src="./View/true_logo.png" alt="True Visions NOW" class="broadcast-logo">
-                            <button class="quick-view">Quick View</button>
-                        </div>
+                    <div class="match-time">22:00</div>
+                    <div class="team away">
+                        <img src="./View/Everton.png" alt="Everton">
+                        <span>Everton</span>
                     </div>
-                    <div class="fixture">
-                        <div class="team home">
-                            <img src="./View/Liverpool.png" alt="Liverpool">
-                            <span>Liverpool</span>
-                        </div>
-                        <div class="match-time">00:30</div>
-                        <div class="team away">
-                            <img src="./View/Fulham.png" alt="Fulham">
-                            <span>Fulham</span>
-                        </div>
-                        <div class="match-stadium">
-                            <img src="./View/stadium-icon.png" alt="Stadium" class="stadium-icon">
-                            <span>Anfield, Liverpool</span>
-                        </div>
-                        <div class="match-broadcast">
-                            <img src="./View/true_logo.png" alt="True Visions NOW" class="broadcast-logo">
-                            <button class="quick-view">Quick View</button>
-                        </div>
+                    <div class="match-stadium">
+                        <img src="./View/stadium-icon.png" alt="Stadium" class="stadium-icon">
+                        <span>Emirates Stadium, London</span>
                     </div>
-                    <div class="fixture">
-                        <div class="team home">
-                            <img src="./View/NewcastleUnited.png" alt="Newcastle">
-                            <span>Newcastle</span>
-                        </div>
-                        <div class="match-time">00:30</div>
-                        <div class="team away">
-                            <img src="./View/LeicesterCity.png" alt="Leicester">
-                            <span>Leicester</span>
-                        </div>
-                        <div class="match-stadium">
-                            <img src="./View/stadium-icon.png" alt="Stadium" class="stadium-icon">
-                            <span>St. James' Park, Newcastle</span>
-                        </div>
-                        <div class="match-broadcast">
-                            <img src="./View/true_logo.png" alt="True Visions NOW" class="broadcast-logo">
-                            <button class="quick-view">Quick View</button>
-                        </div>
+                    <div class="match-broadcast">
+                        <img src="./View/true_logo.png" alt="True Visions NOW" class="broadcast-logo">
+                        <button class="quick-view">Quick View</button>
                     </div>
-                    <div class="fixture">
-                        <div class="team home">
-                            <img src="./View/Wolverhampton.png" alt="Wolves">
-                            <span>Wolves</span>
-                        </div>
-                        <div class="match-time">00:30</div>
-                        <div class="team away">
-                            <img src="./View/IpswichTown.png" alt="Ipswich">
-                            <span>Ipswich</span>
-                        </div>
-                        <div class="match-stadium">
-                            <img src="./View/stadium-icon.png" alt="Stadium" class="stadium-icon">
-                            <span>Anfield, Liverpool</span>
-                        </div>
-                        <div class="match-broadcast">
-                            <img src="./View/true_logo.png" alt="True Visions NOW" class="broadcast-logo">
-                            <button class="quick-view">Quick View</button>
-                        </div>
+                </div>
+                <div class="fixture">
+                    <div class="team home">
+                        <img src="./view/Liverpool.png" alt="liverpool">
+                        <span>Liverpool</span>
+                    </div>
+                    <div class="match-time">22:00</div>
+                    <div class="team away">
+                        <img src="./View/Fulham.png" alt="Fulham">
+                        <span>Fulham</span>
+                    </div>
+                    <div class="match-stadium">
+                        <img src="./View/stadium-icon.png" alt="Stadium" class="stadium-icon">
+                        <span>Anfield, Liverpool</span>
+                    </div>
+                    <div class="match-broadcast">
+                        <img src="./View/true_logo.png" alt="True Visions NOW" class="broadcast-logo">
+                        <button class="quick-view">Quick View</button>
+                    </div>
+                </div>
+                <div class="fixture">
+                    <div class="team home">
+                        <img src="./View/NewcastleUnited.png" alt="Newcastle">
+                        <span>Newcastle</span>
+                    </div>
+                    <div class="match-time">22:00</div>
+                    <div class="team away">
+                        <img src="./View/LeicesterCity.png" alt="Leicester">
+                        <span>Leicester</span>
+                    </div>
+                    <div class="match-stadium">
+                        <img src="./View/stadium-icon.png" alt="Stadium" class="stadium-icon">
+                        <span>St. James' Park, Newcastle</span>
+                    </div>
+                    <div class="match-broadcast">
+                        <img src="./View/true_logo.png" alt="True Visions NOW" class="broadcast-logo">
+                        <button class="quick-view">Quick View</button>
+                    </div>
+                </div>
+                <div class="fixture">
+                    <div class="team home">
+                        <img src="./View/Wolverhampton.png" alt="Wolves">
+                        <span>Wolves</span>
+                    </div>
+                    <div class="match-time">22:00</div>
+                    <div class="team away">
+                        <img src="./View/IpswichTown.png" alt="Ipswich">
+                        <span>Ipswich</span>
+                    </div>
+                    <div class="match-stadium">
+                        <img src="./View/stadium-icon.png" alt="Stadium" class="stadium-icon">
+                        <span>EMolineux Stadium, Wolverhampton</span>
+                    </div>
+                    <div class="match-broadcast">
+                        <img src="./View/true_logo.png" alt="True Visions NOW" class="broadcast-logo">
+                        <button class="quick-view">Quick View</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sunday Fixtures -->
+            <div class="fixtures-list">
+                <div class="fixture-date">
+                    <h2>Sunday 15 December 2024</h2>
+                    <img src="./View/premier-league-logo-header-full.png" alt="Premier League" class="pl-logo-purple">
+                </div>
+                
+                <div class="fixture">
+                    <div class="team home">
+                        <img src="./View/NottinghamForest.png" alt="NottinghamForest">
+                        <span>Nott'm Forest</span>
+                    </div>
+                    <div class="match-time">00:30</div>
+                    <div class="team away">
+                        <img src="./View/AstonVilla.png" alt="AstonVilla">
+                        <span>Aston Villa</span>
+                    </div>
+                    <div class="match-stadium">
+                        <img src="./View/stadium-icon.png" alt="Stadium" class="stadium-icon">
+                        <span>The City Ground, Nottingham</span>
+                    </div>
+                    <div class="match-broadcast">
+                        <img src="./View/true_logo.png" alt="True Visions NOW" class="broadcast-logo">
+                        <button class="quick-view">Quick View</button>
+                    </div>
+                </div>
+
+                <div class="fixture">
+                    <div class="team home">
+                        <img src="./View/Brighton.png" alt="Brighton">
+                        <span>Brighton</span>
+                    </div>
+                    <div class="match-time">21:00</div>
+                    <div class="team away">
+                        <img src="./View/CrystalPalace.png" alt="Crystal Palace">
+                        <span>Crystal Palace</span>
+                    </div>
+                    <div class="match-stadium">
+                        <img src="./View/stadium-icon.png" alt="Stadium" class="stadium-icon">
+                        <span>American Express Stadium, Falmer</span>
+                    </div>
+                    <div class="match-broadcast">
+                        <img src="./View/true_logo.png" alt="True Visions NOW" class="broadcast-logo">
+                        <button class="quick-view">Quick View</button>
+                    </div>
+                </div>
+
+                <div class="fixture">
+                    <div class="team home">
+                        <img src="./View/ManchesterCity.png" alt="Manchester City">
+                        <span>Man City</span>
+                    </div>
+                    <div class="match-time">23:30</div>
+                    <div class="team away">
+                        <img src="./View/ManchesterUnited.png" alt="ManchesterUnited">
+                        <span>Man Utd</span>
+                    </div>
+                    <div class="match-stadium">
+                        <img src="./View/stadium-icon.png" alt="Stadium" class="stadium-icon">
+                        <span>Etihad Stadium, Manchester</span>
+                    </div>
+                    <div class="match-broadcast">
+                        <img src="./View/true_logo.png" alt="True Visions NOW" class="broadcast-logo">
+                        <button class="quick-view">Quick View</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Monday Fixtures -->
+            <div class="fixtures-list">
+                <div class="fixture-date">
+                    <h2>Monday 16 December 2024</h2>
+                    <img src="./View/premier-league-logo-header-full.png" alt="Premier League" class="pl-logo-purple">
+                </div>
+                
+                <div class="fixture">
+                    <div class="team home">
+                        <img src="./View/Chelsea.png" alt="Chelsea">
+                        <span>Chelsea</span>
+                    </div>
+                    <div class="match-time">02:00</div>
+                    <div class="team away">
+                        <img src="./View/Brentford.png" alt="brentfordfc">
+                        <span>Brentford</span>
+                    </div>
+                    <div class="match-stadium">
+                        <img src="./View/stadium-icon.png" alt="Stadium" class="stadium-icon">
+                        <span>Stamford Bridge, London</span>
+                    </div>
+                    <div class="match-broadcast">
+                        <img src="./View/true_logo.png" alt="True Visions NOW" class="broadcast-logo">
+                        <button class="quick-view">Quick View</button>
+                    </div>
+                </div>
+                
+                <div class="fixture">
+                    <div class="team home">
+                        <img src="./View/Southampton.png" alt="southamptonfc">
+                        <span>Southampton</span>
+                    </div>
+                    <div class="match-time">02:00</div>
+                    <div class="team away">
+                        <img src="./View/TottenhamHotspur.png" alt="Spurs">
+                        <span>Spurs</span>
+                    </div>
+                    <div class="match-stadium">
+                        <img src="./View/stadium-icon.png" alt="Stadium" class="stadium-icon">
+                        <span>St. Mary's Stadium, Southampton</span>
+                    </div>
+                    <div class="match-broadcast">
+                        <img src="./View/true_logo.png" alt="True Visions NOW" class="broadcast-logo">
+                        <button class="quick-view">Quick View</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tuesday Fixtures -->
+            <div class="fixtures-list">
+                <div class="fixture-date">
+                    <h2>Tuesday 17 December 2024</h2>
+                    <img src="./View/premier-league-logo-header-full.png" alt="Premier League" class="pl-logo-purple">
+                </div>
+                
+                <div class="fixture">
+                    <div class="team home">
+                        <img src="./View/Bournemouth.png" alt="Bournemouth">
+                        <span>Bournemouth</span>
+                    </div>
+                    <div class="match-time">20:45</div>
+                    <div class="team away">
+                        <img src="./View/WestHam.png" alt="WestHam">
+                        <span>West Ham</span>
+                    </div>
+                    <div class="match-stadium">
+                        <img src="./View/stadium-icon.png" alt="Stadium" class="stadium-icon">
+                        <span>Vitality Stadium, Bournemouth</span>
+                    </div>
+                    <div class="match-broadcast">
+                        <img src="./View/true_logo.png" alt="True Visions NOW" class="broadcast-logo">
+                        <button class="quick-view">Quick View</button>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
+
+    <div class="modal" id="matchModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Match Details</h2>
+                <button class="close-button">&times;</button>
+            </div>
+            <div class="match-info">
+                <div class="team-info home-team">
+                    <img src="" alt="" class="team-logo">
+                    <span class="team-name"></span>
+                </div>
+                <div class="match-time"></div>
+                <div class="team-info away-team">
+                    <img src="" alt="" class="team-logo">
+                    <span class="team-name"></span>
+                </div>
+            </div>
+            <div class="match-details">
+                <div class="detail-row">
+                    <img src="./View/stadium-icon.png" alt="Stadium" class="detail-icon">
+                    <span class="stadium-name"></span>
+                </div>
+                <div class="detail-row">
+                    <img src="./View/true_logo.png" alt="Broadcast" class="detail-icon">
+                    <span>True Visions NOW</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript to handle modal functionality
+        document.querySelectorAll('.quick-view').forEach(button => {
+            button.addEventListener('click', (e) => {
+                e.stopPropagation();
+                const fixture = button.closest('.fixture');
+                const modal = document.getElementById('matchModal');
+                
+                // Get match details
+                const homeTeam = fixture.querySelector('.team.home img');
+                const awayTeam = fixture.querySelector('.team.away img');
+                const matchTime = fixture.querySelector('.match-time').textContent;
+                const stadium = fixture.querySelector('.match-stadium span').textContent;
+                
+                // Update modal content
+                modal.querySelector('.home-team .team-logo').src = homeTeam.src;
+                modal.querySelector('.home-team .team-name').textContent = homeTeam.alt;
+                modal.querySelector('.away-team .team-logo').src = awayTeam.src;
+                modal.querySelector('.away-team .team-name').textContent = awayTeam.alt;
+                modal.querySelector('.match-time').textContent = matchTime;
+                modal.querySelector('.stadium-name').textContent = stadium;
+                
+                // Show modal
+                modal.style.display = 'block';
+            });
+        });
+
+        // Close modal
+        document.querySelector('.close-button').addEventListener('click', () => {
+            document.getElementById('matchModal').style.display = 'none';
+        });
+
+        // Close modal when clicking outside
+        window.addEventListener('click', (e) => {
+            const modal = document.getElementById('matchModal');
+            if (e.target === modal) {
+                modal.style.display = 'none';
+            }
+        });
+    </script>
+
 </body>
 </html>
