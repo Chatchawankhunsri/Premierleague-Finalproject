@@ -1,86 +1,103 @@
-.container {
-    display: flex;
-    max-width: 1200px;
-    margin: 20px auto;
+body {
+    margin: 0;
+    padding: 20px;
+    background-color: #f8f8f8;
+    font-family: Arial, sans-serif;
+}
+
+.page-container {
+    max-width: 800px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     gap: 20px;
 }
 
-.recent-matches {
-    flex: 1;
+.matches-container {
+    background: white;
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.news-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.matchweek-title {
+    font-size: 48px;
+    margin-bottom: 30px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.day-header {
+    color: #37003c;
+    font-weight: bold;
+    margin: 30px 0 15px 0;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .match {
-    background-color: white;
-    border-radius: 8px;
-    padding: 15px;
-    margin-bottom: 15px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    text-align: center; 
-}
-
-.match h3 {
-    margin-top: 0;
-    color: #37003c;
-    font-size: 0.9em;
-    text-transform: uppercase;
-}
-
-.match-details {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 32px 60px 80px 60px 32px;
     align-items: center;
-    margin-bottom: 10px 0; /* */
+    gap: 10px;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
 }
 
-.team {
-    display: flex;
-    align-items: center;
-    margin: 0 20px; 
-
-}
-.team img {
-    width: 30px;
-    height: 30px;
-    margin-right: 8px;
-    width: 40px; /* Adjust image size as needed */
-    height: auto;
-    margin-right: 10px; /* Space between image and team name */
-}
-.team span {
-    font-size: 0.9em;
+.team-logo {
+    width: 32px;
+    height: 32px;
 }
 
-.score {
+.team-name {
     font-weight: bold;
-    font-size: 18px;
-    text-align: center;
-    width: 60px;
-    margin: 0 auto;
+    font-size: 1.1em;
 }
 
-.match-date {
-    text-align: center; /* Center the text */
-    color: #4B0082; /* Match the color to your theme */
-    margin-top: 20px; /* Space above the date */
+.match-time {
+    font-size: 1.3em;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 4px;
 }
 
-.latest-news {
-    flex: 2;
-}
-
-.news-item {
-    background-color: white;
+.news-card {
+    background: white;
     border-radius: 8px;
-    padding: 20px;
-    margin-bottom: 20px;
+    overflow: hidden;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    cursor: pointer;
 }
-.news-item h2 {
-    margin-top: 0;
-    color: #37003c;
+
+.news-card:hover {
+    transform: translateY(-5px);
 }
-.news-item img {
+
+.news-image {
     width: 100%;
-    border-radius: 8px;
-    margin-bottom: 15px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.news-content {
+    padding: 20px;
+}
+
+.news-title {
+    font-size: 24px;
+    color: #37003c;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.news-description {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.5;
 }

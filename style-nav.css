@@ -1,9 +1,11 @@
 .club-logos {
+    width: 100%;
     background-color: white;
     padding: 5px 0;
     text-align: center;
     overflow-x: auto;
     white-space: nowrap;
+    margin: 0; /* Ensure no margins */
 }
 
 .club-logos img {
@@ -12,11 +14,14 @@
 }
 
 .main-nav {
+    width: 100%; /* Ensure full width */
     background-color: #37003c;
     display: flex;
     align-items: center;
-    padding: 10px 20px;
+    padding: 10px 40px; /* Increased side padding */
     position: relative;
+    box-sizing: border-box; /* Include padding in width calculation */
+    margin: 0; /* Ensure no margins */
 }
 
 .sign-in {
@@ -80,26 +85,34 @@
 }
 
 .sticky-nav-container {
+    width: 100%; /* Ensure full width */
     position: sticky;
     top: 0;
     z-index: 1000;
+    margin: 0; /* Ensure no margins */
 }
 
 .secondary-nav {
+    width: 100%; /* Ensure full width */
     background-color: #ffffff;
-    padding: 10px 20px;
+    padding: 10px 0; /* Remove horizontal padding */
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin: 0; /* Ensure no margins */
 }
+
 .secondary-nav ul {
-    list-style-type: none;
+    max-width: 1200px; /* Or your desired width */
+    margin: 0 auto;
     padding: 0;
-    margin: 0;
+    list-style-type: none;
     display: flex;
     justify-content: center;
 }
+
 .secondary-nav li {
     margin: 0 15px;
 }
+
 .secondary-nav a {
     text-decoration: none;
     color: gray;
@@ -124,4 +137,11 @@
 
 .secondary-nav a:hover::after {
     transform: scaleX(1);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
 }
