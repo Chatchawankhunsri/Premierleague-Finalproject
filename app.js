@@ -4,10 +4,11 @@ const path = require('path');
 
 // Serve static files from your View directory
 app.use(express.static(path.join(__dirname, 'View')));
+app.use(express.static(path.join(__dirname, 'Public')));
 
 // Route to home page
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, 'home.html'));
+    res.sendFile(path.join(__dirname, '/public/home.html'));
 });
 
 // Add other routes

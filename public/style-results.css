@@ -181,15 +181,14 @@
     align-items: center;
 }
 
-/* Continue from previous CSS */
 .team-section.home {
-    background: #7A1F1F;
+    background: #00b7ff;
     color: white;
     justify-content: flex-start;
 }
 
 .team-section.away {
-    background: #DB0007;
+    background: #5c4bff;
     color: white;
     justify-content: flex-end;
 }
@@ -241,6 +240,11 @@
 
 .away-goals .goal-details {
     text-align: right;
+}
+
+.goal-time {
+    font-weight: bold;
+    min-width: 40px;
 }
 
 .goal {
@@ -378,9 +382,4 @@
 .match-report-modal::-webkit-scrollbar-thumb {
     background-color: #37003c;
     border-radius: 4px;
-}
-
-.goal-time {
-    font-weight: bold;
-    min-width: 40px;
 }
