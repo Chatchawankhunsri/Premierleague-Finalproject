@@ -1,0 +1,99 @@
+.header {
+    background: linear-gradient(to right, #00ff85, #0066b2);
+    color: white;
+    padding: 20px;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+.filters {
+    background-color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.filter-group {
+    display: flex;
+    align-items: center;
+}
+
+.filter-label {
+    margin-right: 10px;
+    color: #666;
+}
+
+select {
+    padding: 5px 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.reset-filters {
+    color: #37003c;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.reset-icon {
+    margin-right: 5px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    vertical-align: middle;  /* Added this line */
+}
+
+th {
+    background-color: #f8f8f8;
+    font-weight: normal;
+    color: #666;
+}
+
+.club-name {
+    display: flex;  /* Changed from 'center' to 'flex' */
+    align-items: center;
+    gap: 10px;  /* Use gap instead of margin for better spacing */
+}
+
+.club-logo {
+    width: 25px;
+    height: 25px;  /* Changed to maintain aspect ratio */
+    object-fit: contain;  /* Ensures logo fits properly */
+}
+
+.form-indicator {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 2px;
+}
+
+/* td.club-name {
+    min-width: 200px;  
+    white-space: nowrap;  
+} */
+
+.form-w { background-color: #00ff85; }
+.form-d { background-color: #adadad; }
+.form-l { background-color: #ff2882; }
