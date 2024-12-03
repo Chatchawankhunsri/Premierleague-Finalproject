@@ -1,31 +1,26 @@
-var express = require('express');
-var mysql = require('mysql');
-var path = require('path');
-var session = require('express-session');
+const express = require('express');
+const app = express();
+const path = require('path');
 
-var connection = mysql.createConnection ({
-    host: "localhost",
-    user: "root",
-    password: "",
-    database: "accounts"
+// Serve static files from your View directory
+app.use(express.static(path.join(__dirname, 'View')));
+
+// Route to home page
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, 'home.html'));
 });
 
-const app = express();
-app.use(express.static(path.join(__dirname, "/public")));
-app.set("views", path.join(__dirname, "views"));
-app.set('view engine', 'ejs');
+// Add other routes
+app.get('/fixtures', (req, res) => {
+    res.sendFile(path.join(__dirname, 'fixtures.html'));
+});
 
-app.use(
-    session({
-        secret: "secret",
-        resave: true,
-        saveUninitialized: true
-    })
-);
+app.get('/results', (req, res) => {
+    res.sendFile(path.join(__dirname, 'results.html'));
+});
 
-app.get('/Home', isAuthenticated, (req,res) => {
-    res.sendFile(path.join(__dirname, "/public/home.html"));
-})
-
-app.listen(3500);
-console.log("Running on port 3500")
+// Start server
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+    console.log(`Server is running on port ${PORT}`);
+});
