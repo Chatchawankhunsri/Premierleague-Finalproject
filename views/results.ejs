@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premier League</title>
+    <link rel="icon" type="image/x-icon" href="./View/pl-main-logo.png">
+    <link rel="stylesheet" href="style-nav.css">
+    <link rel="stylesheet" href="style-results.css">
+    <style>
+        .match-report-modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            z-index: 1000;
+        }
+
+        .match-report-content {
+            background-color: white;
+            width: 90%;
+            max-width: 800px;
+            margin: 50px auto;
+            border-radius: 10px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .match-header {
+            width: 100%;
+        }
+
+        .match-details {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            background-color: #fff;
+        }
+
+        .match-score-display {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 30px;
+            background: linear-gradient(to right, #87CEEB, #37003c, #4B0082);
+            color: white;
+        }
+
+        .team-section-left, .team-section-right {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            flex: 1;
+        }
+
+        .team-section-right {
+            justify-content: flex-end;
+        }
+
+        .team-logo {
+            width: 80px;
+            height: 80px;
+        }
+
+        .team-name {
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .score-section {
+            text-align: center;
+            padding: 0 30px;
+        }
+
+        .score {
+            font-size: 48px;
+            font-weight: bold;
+        }
+
+        .half-time {
+            margin-top: 10px;
+            font-size: 16px;
+            opacity: 0.8;
+        }
+
+        .goals-section {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            background-color: #fff;
+        }
+
+        .close-button {
+            position: absolute;
+            right: 20px;
+            top: 20px;
+            font-size: 24px;
+            background: none;
+            border: none;
+            color: #fff;
+            cursor: pointer;
+            z-index: 1001;
+        }
+
+        .goals-left, .goals-right {
+            flex: 1;
+            padding: 10px;
+        }
+
+        .goal {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin: 10px 0;
+        }
+
+        .goal-time {
+            min-width: 40px;
+        }
+
+        .ball-icon {
+            width: 20px;
+            height: 20px;
+        }
+
+        .scorer {
+            font-weight: bold;
+        }
+
+        .assist {
+            font-size: 14px;
+            color: #666;
+        }
+
+        .match-report {
+            cursor: pointer;
+            padding: 8px 16px;
+            background-color: #37003c;
+            color: white;
+            border: none;
+            border-radius: 4px;
+        }
+
+        .match-report:hover {
+            background-color: #250028;
+        }
+    </style>
+</head>
+<body>
+    <div class="club-logos">
+        <a href="https://www.arsenal.com/"><img src="./View/Arsenal.png" alt="Arsenal"></a>
+        <a href="https://www.avfc.co.uk/"><img src="./View/AstonVilla.png" alt="Aston Villa"></a>
+        <a href="https://www.afcb.co.uk/"><img src="./View/Bournemouth.png" alt="Bournemouth"></a>
+        <a href="https://www.brentfordfc.com/"><img src="./View/Brentford.png" alt="Brentford"></a>
+        <a href="https://www.brightonandhovealbion.com/"><img src="./View/Brighton.png" alt="Brighton"></a>
+        <a href="https://www.chelseafc.com/"><img src="./View/Chelsea.png" alt="Chelsea"></a>
+        <a href="https://www.cpfc.co.uk/"><img src="./View/CrystalPalace.png" alt="Crystal Palace"></a>
+        <a href="https://www.evertonfc.com/"><img src="./View/Everton.png" alt="Everton"></a>
+        <a href="https://www.fulhamfc.com/"><img src="./View/Fulham.png" alt="Fulham"></a>
+        <a href="https://www.ipswichtown.com/"><img src="./View/IpswichTown.png" alt="Ipswich Town"></a>
+        <a href="https://www.lcfc.com/"><img src="./View/LeicesterCity.png" alt="Leicester City"></a>
+        <a href="https://www.liverpoolfc.com/"><img src="./View/Liverpool.png" alt="Liverpool"></a>
+        <a href="https://www.mancity.com/"><img src="./View/ManchesterCity.png" alt="Manchester City"></a>
+        <a href="https://www.manutd.com/"><img src="./View/ManchesterUnited.png" alt="Manchester United"></a>
+        <a href="https://www.nufc.co.uk/"><img src="./View/NewcastleUnited.png" alt="Newcastle United"></a>
+        <a href="https://www.nottinghamforest.co.uk/"><img src="./View/NottinghamForest.png" alt="Nottingham Forest"></a>
+        <a href="https://www.southamptonfc.com/"><img src="./View/Southampton.png" alt="Southampton"></a>
+        <a href="https://www.tottenhamhotspur.com/"><img src="./View/TottenhamHotspur.png" alt="Tottenham Hotspur"></a>
+        <a href="https://www.whufc.com/"><img src="./View/WestHam.png" alt="West Ham United"></a>
+        <a href="https://www.wolves.co.uk/"><img src="./View/Wolverhampton.png" alt="Wolverhampton Wanderers"></a>
+    </div>
+
+    <nav class="main-nav">
+        <img src="./View/pl-main-logo.png" alt="Premier League Logo" class="logo">
+        <ul class="nav-links">
+            <li class="nav-item"><a href="#" class="nav-link">Premier League</a></li>
+        </ul>
+        <a href="#" class="sign-in">Sign in</a>
+        <span class="search-icon">&#128269;</span>
+    </nav>
+
+    <div class="sticky-nav-container">
+        <nav class="secondary-nav">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/fixtures">Fixtures</a></li>
+                <li><a href="/results">Results</a></li>
+                <li><a href="/tables">Tables</a></li>
+                <li><a href="/transfers">Transfers</a></li>
+                <li><a href="/stats">Stats</a></li>
+                <li><a href="/news">News</a></li>
+                <li><a href="/video">Video</a></li>
+                <li><a href="/clubs">Clubs</a></li>
+                <li><a href="/awards">Awards</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="results-banner">
+        <div class="results-content">
+            <h1 class="results-title">Results</h1>
+            <div class="results-filter">
+                <button class="results-button">First Team</button>
+            </div>
+            
+            <div class="results-list">
+                <% matchData.forEach((dateGroup, groupIndex) => { %>
+                    <div class="result-date">
+                        <h2><%= dateGroup.date %></h2>
+                        <img src="./View/premier-league-logo-header-full.png" alt="Premier League" class="pl-logo-purple">
+                    </div>
+                    
+                    <% dateGroup.matches.forEach((match, matchIndex) => { %>
+                        <div class="result">
+                            <div class="team home">
+                                <img src="./View<%= match.homeTeam.logo %>" alt="<%= match.homeTeam.name %>">
+                                <span><%= match.homeTeam.name %></span>
+                            </div>
+                            <div class="match-score"><%= match.score.home %> - <%= match.score.away %></div>
+                            <div class="team away">
+                                <img src="./View<%= match.awayTeam.logo %>" alt="<%= match.awayTeam.name %>">
+                                <span><%= match.awayTeam.name %></span>
+                            </div>
+                            <div class="match-stadium">
+                                <img src="./View/stadium-icon.png" alt="Stadium" class="stadium-icon">
+                                <span><%= match.stadium %></span>
+                            </div>
+                            <div class="match-broadcast">
+                                <button class="match-report" data-group-index="<%= groupIndex %>" data-match-index="<%= matchIndex %>">Match Report</button>
+                            </div>
+                        </div>
+                    <% }); %>
+                <% }); %>
+            </div>
+        </div>
+    </div>
+
+    <!-- Match Report Modal -->
+    <div class="match-report-modal" id="matchReportModal">
+        <div class="match-report-content">
+            <button class="close-button" onclick="closeMatchReport()">&times;</button>
+            <div id="modalContent"></div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const matchData = <%- JSON.stringify(matchData) %>;
+            
+            document.querySelectorAll('.match-report').forEach(button => {
+                button.addEventListener('click', function() {
+                    const groupIndex = parseInt(this.getAttribute('data-group-index'));
+                    const matchIndex = parseInt(this.getAttribute('data-match-index'));
+                    openMatchReport(groupIndex, matchIndex);
+                });
+            });
+        });
+
+        function openMatchReport(groupIndex, matchIndex) {
+            const matchData = <%- JSON.stringify(matchData) %>;
+            const dateGroup = matchData[groupIndex];
+            const match = dateGroup.matches[matchIndex];
+            const modalContent = document.getElementById('modalContent');
+            
+            // Generate home goals HTML
+            const homeGoalsHTML = match.details.goals.home.map(goal => `
+                <div class="goal">
+                    <span class="goal-time">${goal.time}</span>
+                    <img src="./View/ball-icon.png" class="ball-icon">
+                    <div class="goal-details">
+                        <div class="scorer">${goal.scorer}</div>
+                        ${goal.assist ? `<div class="assist">${goal.assist} (Assist)</div>` : ''}
+                    </div>
+                </div>
+            `).join('');
+
+            // Generate away goals HTML
+            const awayGoalsHTML = match.details.goals.away.map(goal => `
+                <div class="goal">
+                    <div class="goal-details text-right">
+                        <div class="scorer">${goal.scorer}</div>
+                        ${goal.assist ? `<div class="assist">${goal.assist} (Assist)</div>` : ''}
+                    </div>
+                    <img src="./View/ball-icon.png" class="ball-icon">
+                    <span class="goal-time">${goal.time}</span>
+                </div>
+            `).join('');
+
+            modalContent.innerHTML = `
+                <div class="match-header">
+                    <div class="match-details">
+                        <span>📅 ${dateGroup.date}</span>
+                        <span>⌚ Kick Off: ${match.details.kickoff}</span>
+                        <span>🏟️ ${match.stadium}</span>
+                        <span>👨‍⚖️ Ref: ${match.details.referee}</span>
+                    </div>
+
+                    <div class="match-score-display">
+                        <div class="team-section-left">
+                            <img src="./View${match.homeTeam.logo}" alt="${match.homeTeam.name}" class="team-logo">
+                            <div class="team-name">${match.homeTeam.name}</div>
+                        </div>
+                        
+                        <div class="score-section">
+                            <div class="score">${match.score.home} - ${match.score.away}</div>
+                            <div class="half-time">Half Time: ${match.details.halfTimeScore}</div>
+                        </div>
+                        
+                        <div class="team-section-right">
+                            <div class="team-name">${match.awayTeam.name}</div>
+                            <img src="./View${match.awayTeam.logo}" alt="${match.awayTeam.name}" class="team-logo">
+                        </div>
+                    </div>
+
+                    <div class="goals-section">
+                        <div class="goals-left">${homeGoalsHTML}</div>
+                        <div class="goals-right">${awayGoalsHTML}</div>
+                    </div>
+                </div>
+            `;
+            
+            document.getElementById('matchReportModal').style.display = 'block';
+        }
+
+        function closeMatchReport() {
+            document.getElementById('matchReportModal').style.display = 'none';
+        }
+
+        window.onclick = function(event) {
+            const modal = document.getElementById('matchReportModal');
+            if (event.target === modal) {
+                modal.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>
