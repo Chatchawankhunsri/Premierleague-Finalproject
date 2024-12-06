@@ -1,5 +1,65 @@
 const matchData = [
 {
+    date: "Friday 6 December 2024", 
+    matches: [ 
+        { 
+            homeTeam: {
+                name: "Fulham", 
+                logo: "/Fulham.png" 
+            }, 
+            awayTeam: { 
+                name: "Brighton", 
+                logo: "/Brighton.png" 
+            }, 
+            score: { 
+                home: 3, 
+                away: 1 
+            }, 
+            stadium: "Craven Cottage, London", 
+            details: { 
+                kickoff: "02:30", 
+                referee: "Peter Bankes", 
+                halfTimeScore: "1-0", 
+                goals: { 
+                    home: [ 
+                        { time: "04',87'", scorer: "Alex Iwobi", assist: "Antonee Robinson"}, 
+                        { time: "79'", scorer: "Matt O'Riley" },
+                    ], 
+                    away: [
+                        { time: "56'", scorer: "Carlos Baleba", assist: "João Pedro" }, 
+                    ] 
+                } 
+            } 
+        },
+        { 
+            homeTeam: {
+                name: "Bournemouth", 
+                logo: "/Bournemouth.png" 
+            }, 
+            awayTeam: { 
+                name: "Spurs", 
+                logo: "/TottenhamHotspur.png" 
+            }, 
+            score: { 
+                home: 1, 
+                away: 0 
+            }, 
+            stadium: "Vitality Stadium, Bournemouth", 
+            details: { 
+                kickoff: "03:15", 
+                referee: "Simon Hooper", 
+                halfTimeScore: "1-0", 
+                goals: { 
+                    home: [ 
+                        { time: "17'", scorer: "Dean Huijsen", assist: "Marcus Tavernier"}, 
+                    ], 
+                    away: [] 
+                } 
+            } 
+        }
+    ]
+},
+{
     date: "Thursday 5 December 2024", 
     matches: [ 
         { 
