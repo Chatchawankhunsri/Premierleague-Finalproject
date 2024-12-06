@@ -22,7 +22,7 @@ const matchData = [
                 halfTimeScore: "1-0", 
                 goals: { 
                     home: [ 
-                        { time: "04',87'", scorer: "Alex Iwobi", assist: "Antonee Robinson"}, 
+                        { time: "04', 87'", scorer: "Alex Iwobi", assist: "Antonee Robinson"}, 
                         { time: "79'", scorer: "Matt O'Riley" },
                     ], 
                     away: [
