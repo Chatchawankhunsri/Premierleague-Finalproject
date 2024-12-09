@@ -1,0 +1,376 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+.club img {
+    width: 80px; /* Adjusted logo size */
+    height: auto;
+    margin-left: auto; /* Push logo to the right */
+    margin-right: 150px; /* Space between logo and text */
+}
+.club a {
+    text-decoration: none;
+    color: #000000;
+    text-align: left; /* Center the name text */
+    flex-grow: 1; /* Allow text to take available space */
+    margin-right: 20px; /* Space between text and logo */
+}
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .club {
+        width: 150px; /* Smaller width for mobile */
+        height: 150px; /* Smaller height for mobile */
+    }
+    .club img {
+        width: 60px; /* Smaller logo for mobile */
+    }
+}
+
+.club:hover * {
+    color: rgb(255, 255, 255) !important;
+}
+.club {  /*ARS BOU BRE LIV MUN NFO SOU */
+    background-color: #ffffff;
+    border: 2px solid #e0e0e0;
+    border-radius: 10px;
+    width: 280px; /* Fixed width */
+    height: 180px; /* Fixed height */
+    display: flex;
+    flex-direction: column; /* Stack logo and name vertically */
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+    padding: 10px; /* Added padding */
+    margin: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.club:hover {
+    background-color: #fc0505;
+    color: #000;
+}
+
+.club1 {  /*ARS BOU BRE LIV MUN NFO SOU */
+    background-color: #ffffff;
+    border: 2px solid #e0e0e0;
+    border-radius: 10px;
+    width: 280px; /* Fixed width */
+    height: 180px; /* Fixed height */
+    display: flex;
+    flex-direction: column; /* Stack logo and name vertically */
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+    padding: 10px; /* Added padding */
+    margin: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.club1:hover {
+    background-color: #880e4f;
+    color: #000000;
+}
+.club1:hover * {
+    color: rgb(255, 255, 255) !important;
+}
+.club1 img {
+    width: 80px; /* Adjusted logo size */
+    height: auto;
+    margin-left: auto; /* Push logo to the right */
+    margin-right: 150px; /* Space between logo and text */
+}
+.club1 a {
+    text-decoration: none;
+    color: #000000;
+    text-align: left; /* Center the name text */
+    flex-grow: 1; /* Allow text to take available space */
+    margin-right: 20px; /* Space between text and logo */
+}
+@media (max-width: 600px) {
+    .club1 {
+        width: 150px; /* Smaller width for mobile */
+        height: 150px; /* Smaller height for mobile */
+    }
+    .club1 img {
+        width: 60px; /* Smaller logo for mobile */
+    }
+}
+
+ /* ---------------------------------  */
+ .club2 {  /*ARS BOU BRE LIV MUN NFO SOU */
+    background-color: #ffffff;
+    border: 2px solid #e0e0e0;
+    border-radius: 10px;
+    width: 280px; /* Fixed width */
+    height: 180px; /* Fixed height */
+    display: flex;
+    flex-direction: column; /* Stack logo and name vertically */
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+    padding: 10px; /* Added padding */
+    margin: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.club2:hover {
+    background-color: #2a36b1;
+    color: #000000;
+}
+.club2:hover * {
+    color: rgb(255, 255, 255) !important;
+}
+.club2 img {
+    width: 80px; /* Adjusted logo size */
+    height: auto;
+    margin-left: auto; /* Push logo to the right */
+    margin-right: 150px; /* Space between logo and text */
+}
+.club2 a {
+    text-decoration: none;
+    color: #000000;
+    text-align: left; /* Center the name text */
+    flex-grow: 1; /* Allow text to take available space */
+    margin-right: 20px; /* Space between text and logo */
+}
+@media (max-width: 600px) {
+    .club2 {
+        width: 150px; /* Smaller width for mobile */
+        height: 150px; /* Smaller height for mobile */
+    }
+    .club2 img {
+        width: 60px; /* Smaller logo for mobile */
+    }
+}
+
+/* ---------------------------------  */
+.club3 {  /*ARS BOU BRE LIV MUN NFO SOU */
+    background-color: #ffffff;
+    border: 2px solid #e0e0e0;
+    border-radius: 10px;
+    width: 280px; /* Fixed width */
+    height: 180px; /* Fixed height */
+    display: flex;
+    flex-direction: column; /* Stack logo and name vertically */
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+    padding: 10px; /* Added padding */
+    margin: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.club3:hover {
+    background-color: #424242;
+    color: #000000;
+}
+.club3:hover * {
+    color: rgb(255, 255, 255) !important;
+}
+.club3 img {
+    width: 80px; /* Adjusted logo size */
+    height: auto;
+    margin-left: auto; /* Push logo to the right */
+    margin-right: 150px; /* Space between logo and text */
+}
+.club3 a {
+    text-decoration: none;
+    color: #000000;
+    text-align: left; /* Center the name text */
+    flex-grow: 1; /* Allow text to take available space */
+    margin-right: 20px; /* Space between text and logo */
+}
+@media (max-width: 600px) {
+    .club3 {
+        width: 150px; /* Smaller width for mobile */
+        height: 150px; /* Smaller height for mobile */
+    }
+    .club3 img {
+        width: 60px; /* Smaller logo for mobile */
+    }
+}
+
+
+/* ---------------------------------  */
+.club4 {  /*ARS BOU BRE LIV MUN NFO SOU */
+    background-color: #ffffff;
+    border: 2px solid #e0e0e0;
+    border-radius: 10px;
+    width: 280px; /* Fixed width */
+    height: 180px; /* Fixed height */
+    display: flex;
+    flex-direction: column; /* Stack logo and name vertically */
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+    padding: 10px; /* Added padding */
+    margin: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.club4:hover {
+    background-color: #03a9f4;
+    color: #000000;
+}
+.club4:hover * {
+    color: rgb(255, 255, 255) !important;
+}
+.club4 img {
+    width: 80px; /* Adjusted logo size */
+    height: auto;
+    margin-left: auto; /* Push logo to the right */
+    margin-right: 150px; /* Space between logo and text */
+}
+.club4 a {
+    text-decoration: none;
+    color: #000000;
+    text-align: left; /* Center the name text */
+    flex-grow: 1; /* Allow text to take available space */
+    margin-right: 20px; /* Space between text and logo */
+}
+@media (max-width: 600px) {
+    .club4 {
+        width: 150px; /* Smaller width for mobile */
+        height: 150px; /* Smaller height for mobile */
+    }
+    .club4 img {
+        width: 60px; /* Smaller logo for mobile */
+    }
+}
+
+/* ---------------------------------  */
+.club5 {  /*ARS BOU BRE LIV MUN NFO SOU */
+    background-color: #ffffff;
+    border: 2px solid #e0e0e0;
+    border-radius: 10px;
+    width: 280px; /* Fixed width */
+    height: 180px; /* Fixed height */
+    display: flex;
+    flex-direction: column; /* Stack logo and name vertically */
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+    padding: 10px; /* Added padding */
+    margin: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.club5:hover {
+    background-color: #000000;
+    color: #000000;
+}
+.club5:hover * {
+    color: rgb(255, 255, 255) !important;
+}
+.club5 img {
+    width: 80px; /* Adjusted logo size */
+    height: auto;
+    margin-left: auto; /* Push logo to the right */
+    margin-right: 150px; /* Space between logo and text */
+}
+.club5 a {
+    text-decoration: none;
+    color: #000000;
+    text-align: left; /* Center the name text */
+    flex-grow: 1; /* Allow text to take available space */
+    margin-right: 20px; /* Space between text and logo */
+}
+@media (max-width: 600px) {
+    .club5 {
+        width: 150px; /* Smaller width for mobile */
+        height: 150px; /* Smaller height for mobile */
+    }
+    .club5 img {
+        width: 60px; /* Smaller logo for mobile */
+    }
+}
+
+/* ---------------------------------  */
+.club6 {  /*ARS BOU BRE LIV MUN NFO SOU */
+    background-color: #ffffff;
+    border: 2px solid #e0e0e0;
+    border-radius: 10px;
+    width: 280px; /* Fixed width */
+    height: 180px; /* Fixed height */
+    display: flex;
+    flex-direction: column; /* Stack logo and name vertically */
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+    padding: 10px; /* Added padding */
+    margin: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.club6:hover {
+    background-color: #44140c;
+    color: #000000;
+}
+.club6:hover * {
+    color: rgb(255, 255, 255) !important;
+}
+.club6 img {
+    width: 80px; /* Adjusted logo size */
+    height: auto;
+    margin-left: auto; /* Push logo to the right */
+    margin-right: 150px; /* Space between logo and text */
+}
+.club6 a {
+    text-decoration: none;
+    color: #000000;
+    text-align: left; /* Center the name text */
+    flex-grow: 1; /* Allow text to take available space */
+    margin-right: 20px; /* Space between text and logo */
+}
+@media (max-width: 600px) {
+    .club6 {
+        width: 150px; /* Smaller width for mobile */
+        height: 150px; /* Smaller height for mobile */
+    }
+    .club6 img {
+        width: 60px; /* Smaller logo for mobile */
+    }
+}
+
+/* ---------------------------------  */
+.club7 {  /*ARS BOU BRE LIV MUN NFO SOU */
+    background-color: #ffffff;
+    border: 2px solid #e0e0e0;
+    border-radius: 10px;
+    width: 280px; /* Fixed width */
+    height: 180px; /* Fixed height */
+    display: flex;
+    flex-direction: column; /* Stack logo and name vertically */
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+    padding: 10px; /* Added padding */
+    margin: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.club7:hover {
+    background-color: #f9a825;
+    color: #000000;
+}
+.club7:hover * {
+    color: rgb(255, 255, 255) !important;
+}
+.club7 img {
+    width: 80px; /* Adjusted logo size */
+    height: auto;
+    margin-left: auto; /* Push logo to the right */
+    margin-right: 150px; /* Space between logo and text */
+}
+.club7 a {
+    text-decoration: none;
+    color: #000000;
+    text-align: left; /* Center the name text */
+    flex-grow: 1; /* Allow text to take available space */
+    margin-right: 20px; /* Space between text and logo */
+}
+@media (max-width: 600px) {
+    .club7 {
+        width: 150px; /* Smaller width for mobile */
+        height: 150px; /* Smaller height for mobile */
+    }
+    .club7 img {
+        width: 60px; /* Smaller logo for mobile */
+    }
+}
