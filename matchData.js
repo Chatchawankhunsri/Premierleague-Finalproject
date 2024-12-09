@@ -1,5 +1,253 @@
 const matchData = [
 {
+    date: "Sunday 8 December 2024", 
+    matches: [ 
+        { 
+            homeTeam: {
+                name: "Man Utd", 
+                logo: "/ManchesterUnited.png" 
+            }, 
+            awayTeam: { 
+                name: "Nott'm Forest", 
+                logo: "/NottinghamForest.png" 
+            }, 
+            score: { 
+                home: 2, 
+                away: 3 
+            }, 
+            stadium: "Old Trafford, Manchester", 
+            details: { 
+                kickoff: "00:30", 
+                referee: "Darren England", 
+                halfTimeScore: "1-1", 
+                goals: { 
+                    home: [ 
+                        { time: "18'", scorer: "Rasmus Højlund" },
+                        { time: "61'", scorer: "Bruno Fernandes", assist: "Amad Diallo" }, 
+                    ], 
+                    away: [
+                        { time: "02'", scorer: "Nikola Milenkovic", assist: "Elliot Anderson" },
+                        { time: "47'", scorer: "Morgan Gibbs-White", assist: "Callum Hudson-Odoi" },
+                        { time: "54'", scorer: "Chris Wood", assist: "Morgan Gibbs-White" }, 
+                    ] 
+                } 
+            } 
+        },
+        { 
+            homeTeam: {
+                name: "Fulham", 
+                logo: "/Fulham.png" 
+            }, 
+            awayTeam: { 
+                name: "Arsenal", 
+                logo: "/Arsenal.png" 
+            }, 
+            score: { 
+                home: 1, 
+                away: 1 
+            }, 
+            stadium: "Craven Cottage, London", 
+            details: { 
+                kickoff: "21:00", 
+                referee: "Chris Kavanagh", 
+                halfTimeScore: "1-0", 
+                goals: { 
+                    home: [ 
+                        { time: "11'", scorer: "Raúl Jiménez", assist: "Kenny Tete" },   
+                    ], 
+                    away: [
+                        { time: "52'", scorer: "William Saliba", assist: "Kai Havertz" }, 
+                    ] 
+                } 
+            } 
+        },
+        { 
+            homeTeam: {
+                name: "Ipswich", 
+                logo: "/IpswichTown.png" 
+            }, 
+            awayTeam: { 
+                name: "Bournemouth", 
+                logo: "/Bournemouth.png" 
+            }, 
+            score: { 
+                home: 1, 
+                away: 2 
+            }, 
+            stadium: "Portman Road, Ipswich", 
+            details: { 
+                kickoff: "21:00", 
+                referee: "Michael Salisbury", 
+                halfTimeScore: "1-0", 
+                goals: { 
+                    home: [ 
+                        { time: "21'", scorer: "Conor Chaplin", assist: "Cameron Burgess" },
+                    ], 
+                    away: [
+                        { time: "87'", scorer: "Enes Ünal", assist: "Dango Ouattara" }, 
+                        { time: "90+5'", scorer: "Dango Ouattara" }, 
+                    ] 
+                } 
+            } 
+        },
+        { 
+            homeTeam: {
+                name: "Leicester", 
+                logo: "/LeicesterCity.png" 
+            }, 
+            awayTeam: { 
+                name: "Brighton", 
+                logo: "/Brighton.png" 
+            }, 
+            score: { 
+                home: 2, 
+                away: 2 
+            }, 
+            stadium: "King Power Stadium, Leicester", 
+            details: { 
+                kickoff: "21:00", 
+                referee: "Stuart Attwell", 
+                halfTimeScore: "0-1", 
+                goals: { 
+                    home: [ 
+                        { time: "86'", scorer: "Jamie Vardy" },
+                        { time: "90+1'", scorer: "Bobby De Cordova-Reid", assist: "Jamie Vardy" },
+                    ], 
+                    away: [
+                        { time: "37'", scorer: "Tariq Lamptey", assist: "Pervis Estupiñán " }, 
+                        { time: "79'", scorer: "Yankuba Minteh" }, 
+                    ] 
+                } 
+            } 
+        },
+        { 
+            homeTeam: {
+                name: "Spurs", 
+                logo: "/TottenhamHotspur.png" 
+            }, 
+            awayTeam: { 
+                name: "Chelsea", 
+                logo: "/Chelsea.png" 
+            }, 
+            score: { 
+                home: 3, 
+                away: 4 
+            }, 
+            stadium: "Tottenham Hotspur Stadium, London", 
+            details: { 
+                kickoff: "23:30", 
+                referee: "Anthony Taylor", 
+                halfTimeScore: "2-1", 
+                goals: { 
+                    home: [ 
+                        { time: "05'", scorer: "Dominic Solanke", assist: "Brennan Johnson" },
+                        { time: "11'", scorer: "Dejan Kulusevski", assist: "Pedro Porro" },
+                        { time: "90+6'", scorer: "Son Heung-Min", assist: "James Maddison" },
+                    ], 
+                    away: [
+                        { time: "17'", scorer: "Jadon Sancho", assist: "Marc Cucurella" },
+                        { time: "61' (pen), 84' (pen)", scorer: "Cole Palmer" },
+                        { time: "73'", scorer: "Enzo Fernández" },
+                    ] 
+                } 
+            } 
+        },
+    ]
+},
+{
+    date: "Saturday 7 December 2024", 
+    matches: [ 
+        { 
+            homeTeam: {
+                name: "Aston Villa", 
+                logo: "/AstonVilla.png" 
+            }, 
+            awayTeam: { 
+                name: "Southampton", 
+                logo: "/Southampton.png" 
+            }, 
+            score: { 
+                home: 1, 
+                away: 0 
+            }, 
+            stadium: "Villa Park, Birmingham", 
+            details: { 
+                kickoff: "22:00", 
+                referee: "Darren Bond", 
+                halfTimeScore: "1-0", 
+                goals: { 
+                    home: [ 
+                        { time: "24'", scorer: "Jhon Durán" }, 
+                    ], 
+                    away: [] 
+                } 
+            } 
+        },
+        { 
+            homeTeam: {
+                name: "Brentford", 
+                logo: "/Brentford.png" 
+            }, 
+            awayTeam: { 
+                name: "Newcastle", 
+                logo: "/NewcastleUnited.png" 
+            }, 
+            score: { 
+                home: 4, 
+                away: 2 
+            }, 
+            stadium: "Gtech Community Stadium, Brentford", 
+            details: { 
+                kickoff: "22:00", 
+                referee: "Simon Hooper", 
+                halfTimeScore: "2-2", 
+                goals: { 
+                    home: [ 
+                        { time: "08'", scorer: "Bryan Mbeumo", assist: "Christian Nørgaard" },
+                        { time: "28'", scorer: "Yoane Wissa" },
+                        { time: "56'", scorer: "Nathan Collins", assist: "Mark Flekken" },
+                        { time: "90'", scorer: "Kevin Schade", assist: "Bryan Mbeumo" },      
+                    ], 
+                    away: [
+                        { time: "11'", scorer: "Alexander Isak", assist: "Jacob Murphy" }, 
+                        { time: "32'", scorer: "Harvey Barnes", assist: "Jacob Murphy" }, 
+                    ] 
+                } 
+            } 
+        },
+        { 
+            homeTeam: {
+                name: "Crystal Palace", 
+                logo: "/CrystalPalace.png" 
+            }, 
+            awayTeam: { 
+                name: "Man City", 
+                logo: "/ManchesterCity.png" 
+            }, 
+            score: { 
+                home: 2, 
+                away: 2 
+            }, 
+            stadium: "Selhurst Park, London", 
+            details: { 
+                kickoff: "22:00", 
+                referee: "Robert Jones", 
+                halfTimeScore: "1-1", 
+                goals: { 
+                    home: [ 
+                        { time: "04'", scorer: "Daniel Muñoz", assist: "Will Hughes" },
+                        { time: "56'", scorer: "Maxence Lacroix", assist: "Will Hughes" },
+                    ], 
+                    away: [
+                        { time: "30'", scorer: "Erling Haaland", assist: "Matheus Nunes" }, 
+                        { time: "68'", scorer: "Rico Lewis", assist: "Bernardo Silva" }, 
+                    ] 
+                } 
+            } 
+        },
+    ]
+},
+{
     date: "Friday 6 December 2024", 
     matches: [ 
         { 
@@ -180,7 +428,7 @@ const matchData = [
                     ] 
                 } 
             } 
-        } ,
+        },
         { 
             homeTeam: { 
                 name: "Arsenal", 
@@ -207,7 +455,7 @@ const matchData = [
                     away: [] 
                 } 
             } 
-        } ,
+        },
         { 
             homeTeam: { 
                 name: "Aston Villa", 
@@ -237,7 +485,7 @@ const matchData = [
                     ] 
                 } 
             } 
-        } ,
+        },
     ] 
 },
 {
