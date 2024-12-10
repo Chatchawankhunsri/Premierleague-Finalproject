@@ -12,23 +12,21 @@ const matchData = [
                 logo: "/Wolverhampton.png" 
             }, 
             score: { 
-                home: 0, 
-                away: 0 
+                home: 2, 
+                away: 1 
             }, 
             stadium: "London Stadium, London", 
             details: { 
                 kickoff: "03:00", 
-                referee: "Darren England", 
+                referee: "John Brooks", 
                 halfTimeScore: "0-0", 
                 goals: { 
                     home: [ 
-                        { time: "18'", scorer: "Rasmus Højlund" },
-                        { time: "61'", scorer: "Bruno Fernandes", assist: "Amad Diallo" }, 
+                        { time: "54'", scorer: "Tomás Soucek", assist: "Jarrod Bowen" },
+                        { time: "72'", scorer: "Jarrod Bowen", assist: "Mohammed Kudus" }, 
                     ], 
                     away: [
-                        { time: "02'", scorer: "Nikola Milenkovic", assist: "Elliot Anderson" },
-                        { time: "47'", scorer: "Morgan Gibbs-White", assist: "Callum Hudson-Odoi" },
-                        { time: "54'", scorer: "Chris Wood", assist: "Morgan Gibbs-White" }, 
+                        { time: "69'", scorer: "Matt Doherty", assist: "Rayan Aït-Nouri" },
                     ] 
                 } 
             } 
