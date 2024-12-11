@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Player Statistics - Premier League</title>
+    <title>Premier League</title>
+    <link rel="icon" type="image/x-icon" href="./View/pl-main-logo.png">
     <link rel="stylesheet" href="style-nav.css">
     <link rel="stylesheet" href="style-stats.css">
     <style>
@@ -58,117 +59,488 @@
         </nav>
     </div>
 
-    <div class="stats-container">
-        <div class="players-row">
-            <div class="player-card">
-                <div class="player-header">
-                    <img src="./View/MohamedSalah.png" alt="Player 1" class="player-image">
-                    <div class="player-info">
-                        <h2>Player 1</h2>
-                        <p>Position • Team 1</p>
+    <div class="container">
+        <h1 class="page-title">2024/25 Player Stats</h1>
+        
+        <div class="stats-container">
+            <!-- Goals Section -->
+            <div class="stat-category goals">
+                <h2 class="category-title">Goals</h2>
+                <div class="stat-card">
+                    <div class="leader-card">
+                        <div>
+                            <div class="leader-rank">1</div>
+                            <div class="leader-name">Erling Haaland</div>
+                            <div class="leader-club">
+                                <img src="./View/ManchesterCity.png" alt="Man City" class="club-logo">
+                                Man City
+                            </div>
+                        </div>
+                        <div class="leader-value">13</div>
+                        <img src="./View/haalandawards.png" alt="Erling Haaland" class="player-image">
                     </div>
-                </div>
-                <div class="stats-grid">
-                    <div class="stat-item">
-                        <div class="stat-value">10</div>
-                        <div class="stat-label">Goals</div>
-                    </div>
-                    <div class="stat-item">
-                        <div class="stat-value">5</div>
-                        <div class="stat-label">Assists</div>
-                    </div>
-                    <div class="stat-item">
-                        <div class="stat-value">20</div>
-                        <div class="stat-label">Appearances</div>
-                    </div>
-                    <div class="stat-item">
-                        <div class="stat-value">1800</div>
-                        <div class="stat-label">Minutes</div>
+                    <div class="stats-list">
+                        <div class="stat-row">
+                            <div class="rank">1</div>
+                            <div class="player-info">
+                                <img src="./View/Liverpool.png" alt="Liverpool" class="club-logo">
+                                <div class="player-details">
+                                    <span class="player-name">Mohamed Salah</span>
+                                    <span class="club-name">Liverpool</span>
+                                </div>
+                            </div>
+                            <div class="value">13</div>
+                        </div>
+                        <div class="stat-row">
+                            <div class="rank">3</div>
+                            <div class="player-info">
+                                <img src="./View/Chelsea.png" alt="Chelsea" class="club-logo">
+                                <div class="player-details">
+                                    <span class="player-name">Cole Palmer</span>
+                                    <span class="club-name">Chelsea</span>
+                                </div>
+                            </div>
+                            <div class="value">11</div>
+                        </div>
+                        <div class="stat-row">
+                            <div class="rank">4</div>
+                            <div class="player-info">
+                                <img src="./View/NottinghamForest.png" alt="Nottm Forest" class="club-logo">
+                                <div class="player-details">
+                                    <span class="player-name">Chris Wood</span>
+                                    <span class="club-name">Nottm Forest</span>
+                                </div>
+                            </div>
+                            <div class="value">10</div>
+                        </div>
+                        <div class="stat-row">
+                            <div class="rank">5</div>
+                            <div class="player-info">
+                                <img src="./View/Brentford.png" alt="Brentford" class="club-logo">
+                                <div class="player-details">
+                                    <span class="player-name">Bayan Mbeumo</span>
+                                    <span class="club-name">Brentford</span>
+                                </div>
+                            </div>
+                            <div class="value">9</div>
+                        </div>
+                        <div class="stat-row">
+                            <div class="rank">5</div>
+                            <div class="player-info">
+                                <img src="./View/Brentford.png" alt="Brentford" class="club-logo">
+                                <div class="player-details">
+                                    <span class="player-name">Yoane Wissa</span>
+                                    <span class="club-name">Brentford</span>
+                                </div>
+                            </div>
+                            <div class="value">9</div>
+                        </div>
+                        <div class="stat-row">
+                            <div class="rank">7</div>
+                            <div class="player-info">
+                                <img src="./View/Chelsea.png" alt="Chelsea" class="club-logo">
+                                <div class="player-details">
+                                    <span class="player-name">Nicolas Jackson</span>
+                                    <span class="club-name">Chelsea</span>
+                                </div>
+                            </div>
+                            <div class="value">8</div>
+                        </div>
+                        <div class="stat-row">
+                            <div class="rank">8</div>
+                            <div class="player-info">
+                                <img src="./View/Wolverhampton.png" alt="Wolves" class="club-logo">
+                                <div class="player-details">
+                                    <span class="player-name">Matheus Cunha</span>
+                                    <span class="club-name">Wolves</span>
+                                </div>
+                            </div>
+                            <div class="value">7</div>
+                        </div>
+                        <div class="stat-row">
+                            <div class="rank">8</div>
+                            <div class="player-info">
+                                <img src="./View/AstonVilla.png" alt="Aston Villa" class="club-logo">
+                                <div class="player-details">
+                                    <span class="player-name">Ollie Watkins</span>
+                                    <span class="club-name">Aston Villa</span>
+                                </div>
+                            </div>
+                            <div class="value">7</div>
+                        </div>
+                        <div class="stat-row">
+                            <div class="rank">10</div>
+                            <div class="player-info">
+                                <img src="./View/IpswichTown.png" alt="Ipswich" class="club-logo">
+                                <div class="player-details">
+                                    <span class="player-name">Liam Delap</span>
+                                    <span class="club-name">Ipswich</span>
+                                </div>
+                            </div>
+                            <div class="value">6</div>
+                        </div>
+                        
                     </div>
                 </div>
             </div>
-            <div class="player-card">
-                <div class="player-header">
-                    <img src="./View/BukayoSaka.png" alt="Player 1" class="player-image">
-                    <div class="player-info">
-                        <h2>Player 1</h2>
-                        <p>Position • Team 1</p>
+
+            <div class="stat-category assists">
+                <h2 class="category-title">Assists</h2>
+                <div class="stat-card">
+                    <div class="leader-card">
+                        <div>
+                            <div class="leader-rank">1</div>
+                            <div class="leader-name">Bukayo Saka</div>
+                            <div class="leader-club">
+                                <img src="./View/Arsenal.png" alt="Arsenal" class="club-logo">
+                                Arsenal
+                            </div>
+                        </div>
+                        <div class="leader-value">10</div>
+                        <img src="./View/BukayoSaka.png" alt="BukayoSaka" class="player-image">
                     </div>
-                </div>
-                <div class="stats-grid">
-                    <div class="stat-item">
-                        <div class="stat-value">10</div>
-                        <div class="stat-label">Goals</div>
-                    </div>
-                    <div class="stat-item">
-                        <div class="stat-value">5</div>
-                        <div class="stat-label">Assists</div>
-                    </div>
-                    <div class="stat-item">
-                        <div class="stat-value">20</div>
-                        <div class="stat-label">Appearances</div>
-                    </div>
-                    <div class="stat-item">
-                        <div class="stat-value">1800</div>
-                        <div class="stat-label">Minutes</div>
+                    <div class="stats-list">
+                        <div class="stat-row">
+                            <div class="rank">2</div>
+                            <div class="player-info">
+                                <img src="./View/Liverpool.png" alt="Liverpool" class="club-logo">
+                                <div class="player-details">
+                                    <span class="player-name">Mohamed Salah</span>
+                                    <span class="club-name">Liverpool</span>
+                                </div>
+                            </div>
+                            <div class="value">8</div>
+                        </div>
+                        <div class="stat-row">
+                            <div class="rank">3</div>
+                            <div class="player-info">
+                                <img src="./View/ManchesterUnited.png" alt="ManchesterUnited" class="club-logo">
+                                <div class="player-details">
+                                    <span class="player-name">Amad Diallo</span>
+                                    <span class="club-name">Man Utd</span>
+                                </div>
+                            </div>
+                            <div class="value">6</div>
+                        </div>
+                        <div class="stat-row">
+                            <div class="rank">3</div>
+                            <div class="player-info">
+                                <img src="./View/Chelsea.png" alt="Chelsea" class="club-logo">
+                                <div class="player-details">
+                                    <span class="player-name">Cole Palmer</span>
+                                    <span class="club-name">Chelsea</span>
+                                </div>
+                            </div>
+                            <div class="value">6</div>
+                        </div>
+                        <div class="stat-row">
+                            <div class="rank">5</div>
+                            <div class="player-info">
+                                <img src="./View/ManchesterUnited.png" alt="ManchesterUnited" class="club-logo">
+                                <div class="player-details">
+                                    <span class="player-name">Bruno Fernandes</span>
+                                    <span class="club-name">Man Utd</span>
+                                </div>
+                            </div>
+                            <div class="value">5</div>
+                        </div>
+                        <div class="stat-row">
+                            <div class="rank">5</div>
+                            <div class="player-info">
+                                <img src="./View/Brentford.png" alt="Brentford" class="club-logo">
+                                <div class="player-details">
+                                    <span class="player-name">Mikkel Damsgaard</span>
+                                    <span class="club-name">Brentford</span>
+                                </div>
+                            </div>
+                            <div class="value">5</div>
+                        </div>
+                        <div class="stat-row">
+                            <div class="rank">7</div>
+                            <div class="player-info">
+                                <img src="./View/NottinghamForest.png" alt="NottinghamForest" class="club-logo">
+                                <div class="player-details">
+                                    <span class="player-name">Elliot Anderson</span>
+                                    <span class="club-name">Nottm Forest</span>
+                                </div>
+                            </div>
+                            <div class="value">4</div>
+                        </div>
+                        <div class="stat-row">
+                            <div class="rank">7</div>
+                            <div class="player-info">
+                                <img src="./View/WestHam.png" alt="WestHam" class="club-logo">
+                                <div class="player-details">
+                                    <span class="player-name">Jarrod Bowen</span>
+                                    <span class="club-name">West Ham</span>
+                                </div>
+                            </div>
+                            <div class="value">4</div>
+                        </div>
+                        <div class="stat-row">
+                            <div class="rank">7</div>
+                            <div class="player-info">
+                                <img src="./View/TottenhamHotspur.png" alt="TottenhamHotspur" class="club-logo">
+                                <div class="player-details">
+                                    <span class="player-name">James Maddison</span>
+                                    <span class="club-name">Spurs</span>
+                                </div>
+                            </div>
+                            <div class="value">4</div>
+                        </div>
+                        <div class="stat-row">
+                            <div class="rank">7</div>
+                            <div class="player-info">
+                                <img src="./View/ManchesterCity.png" alt="ManchesterCity" class="club-logo">
+                                <div class="player-details">
+                                    <span class="player-name">Bernardo Silva</span>
+                                    <span class="club-name">Man City</span>
+                                </div>
+                            </div>
+                            <div class="value">4</div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="player-card">
-                <div class="player-header">
-                    <img src="./View/VirgilVanDijk.png" alt="Player 1" class="player-image">
-                    <div class="player-info">
-                        <h2>Player 1</h2>
-                        <p>Position • Team 1</p>
+
+            <div class="stat-category passes">
+                <h2 class="category-title">Assists</h2>
+                <div class="stat-card">
+                    <div class="leader-card">
+                        <div>
+                            <div class="leader-rank">1</div>
+                            <div class="leader-name">Virgil Van Dijk</div>
+                            <div class="leader-club">
+                                <img src="./View/Liverpool.png" alt="Liverpool" class="club-logo">
+                                Liverpool
+                            </div>
+                        </div>
+                        <div class="leader-value">1,107</div>
+                        <img src="./View/VirgilVanDijk.png" alt="VirgilVanDijk" class="player-image">
                     </div>
-                </div>
-                <div class="stats-grid">
-                    <div class="stat-item">
-                        <div class="stat-value">10</div>
-                        <div class="stat-label">Goals</div>
-                    </div>
-                    <div class="stat-item">
-                        <div class="stat-value">5</div>
-                        <div class="stat-label">Assists</div>
-                    </div>
-                    <div class="stat-item">
-                        <div class="stat-value">20</div>
-                        <div class="stat-label">Appearances</div>
-                    </div>
-                    <div class="stat-item">
-                        <div class="stat-value">1800</div>
-                        <div class="stat-label">Minutes</div>
+                    <div class="stats-list">
+                        <div class="stat-row">
+                            <div class="rank">2</div>
+                            <div class="player-info">
+                                <img src="./View/ManchesterCity.png" alt="ManchesterCity" class="club-logo">
+                                <div class="player-details">
+                                    <span class="player-name">Rúben Dias</span>
+                                    <span class="club-name">Man City</span>
+                                </div>
+                            </div>
+                            <div class="value">1,066</div>
+                        </div>
+                        <div class="stat-row">
+                            <div class="rank">3</div>
+                            <div class="player-info">
+                                <img src="./View/Chelsea.png" alt="Chelsea" class="club-logo">
+                                <div class="player-details">
+                                    <span class="player-name">Levi Colwill</span>
+                                    <span class="club-name">Chelsea</span>
+                                </div>
+                            </div>
+                            <div class="value">1,032</div>
+                        </div>
+                        <div class="stat-row">
+                            <div class="rank">4</div>
+                            <div class="player-info">
+                                <img src="./View/Southampton.png" alt="Southampton" class="club-logo">
+                                <div class="player-details">
+                                    <span class="player-name">Taylor Harwood-Bellis</span>
+                                    <span class="club-name">Southampton</span>
+                                </div>
+                            </div>
+                            <div class="value">981</div>
+                        </div>
+                        <div class="stat-row">
+                            <div class="rank">5</div>
+                            <div class="player-info">
+                                <img src="./View/ManchesterCity.png" alt="ManchesterCity" class="club-logo">
+                                <div class="player-details">
+                                    <span class="player-name">Josko Gvardiol</span>
+                                    <span class="club-name">Man City</span>
+                                </div>
+                            </div>
+                            <div class="value">979</div>
+                        </div>
+                        <div class="stat-row">
+                            <div class="rank">6</div>
+                            <div class="player-info">
+                                <img src="./View/Southampton.png" alt="Southampton" class="club-logo">
+                                <div class="player-details">
+                                    <span class="player-name">Jan Bednarek</span>
+                                    <span class="club-name">Southampton</span>
+                                </div>
+                            </div>
+                            <div class="value">944</div>
+                        </div>
+                        <div class="stat-row">
+                            <div class="rank">7</div>
+                            <div class="player-info">
+                                <img src="./View/Arsenal.png" alt="Arsenal" class="club-logo">
+                                <div class="player-details">
+                                    <span class="player-name">William Saliba</span>
+                                    <span class="club-name">Arsenal</span>
+                                </div>
+                            </div>
+                            <div class="value">898</div>
+                        </div>
+                        <div class="stat-row">
+                            <div class="rank">8</div>
+                            <div class="player-info">
+                                <img src="./View/Fulham.png" alt="Fulham" class="club-logo">
+                                <div class="player-details">
+                                    <span class="player-name">Calvin Bassey</span>
+                                    <span class="club-name">Fulham</span>
+                                </div>
+                            </div>
+                            <div class="value">891</div>
+                        </div>
+                        <div class="stat-row">
+                            <div class="rank">9</div>
+                            <div class="player-info">
+                                <img src="./View/ManchesterCity.png" alt="ManchesterCity" class="club-logo">
+                                <div class="player-details">
+                                    <span class="player-name">Manuel Akanji</span>
+                                    <span class="club-name">Man City</span>
+                                </div>
+                            </div>
+                            <div class="value">882</div>
+                        </div>
+                        <div class="stat-row">
+                            <div class="rank">10</div>
+                            <div class="player-info">
+                                <img src="./View/TottenhamHotspur.png" alt="TottenhamHotspur" class="club-logo">
+                                <div class="player-details">
+                                    <span class="player-name">Cristian Romero</span>
+                                    <span class="club-name">Spurs</span>
+                                </div>
+                            </div>
+                            <div class="value">873</div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="player-card">
-                <div class="player-header">
-                    <img src="./View/AndreOnana.png" alt="Player 1" class="player-image">
-                    <div class="player-info">
-                        <h2>Player 1</h2>
-                        <p>Position • Team 1</p>
+
+            <div class="stat-category clean-sheets">
+                <h2 class="category-title">Clean sheets</h2>
+                <div class="stat-card">
+                    <div class="leader-card">
+                        <div>
+                            <div class="leader-rank">1</div>
+                            <div class="leader-name">André Onana</div>
+                            <div class="leader-club">
+                                <img src="./View/ManchesterUnited.png" alt="ManchesterUnited" class="club-logo">
+                                Man Utd
+                            </div>
+                        </div>
+                        <div class="leader-value">6</div>
+                        <img src="./View/AndreOnana.png" alt="AndreOnana" class="player-image">
                     </div>
-                </div>
-                <div class="stats-grid">
-                    <div class="stat-item">
-                        <div class="stat-value">10</div>
-                        <div class="stat-label">Goals</div>
-                    </div>
-                    <div class="stat-item">
-                        <div class="stat-value">5</div>
-                        <div class="stat-label">Assists</div>
-                    </div>
-                    <div class="stat-item">
-                        <div class="stat-value">20</div>
-                        <div class="stat-label">Appearances</div>
-                    </div>
-                    <div class="stat-item">
-                        <div class="stat-value">1800</div>
-                        <div class="stat-label">Minutes</div>
+                    <div class="stats-list">
+                        <div class="stat-row">
+                            <div class="rank">2</div>
+                            <div class="player-info">
+                                <img src="./View/Everton.png" alt="Everton" class="club-logo">
+                                <div class="player-details">
+                                    <span class="player-name">Jordan Pickford</span>
+                                    <span class="club-name">Everton</span>
+                                </div>
+                            </div>
+                            <div class="value">5</div>
+                        </div>
+                        <div class="stat-row">
+                            <div class="rank">2</div>
+                            <div class="player-info">
+                                <img src="./View/Arsenal.png" alt="Arsenal" class="club-logo">
+                                <div class="player-details">
+                                    <span class="player-name">David Raya</span>
+                                    <span class="club-name">Arsenal</span>
+                                </div>
+                            </div>
+                            <div class="value">5</div>
+                        </div>
+                        <div class="stat-row">
+                            <div class="rank">2</div>
+                            <div class="player-info">
+                                <img src="./View/NottinghamForest.png" alt="NottinghamForest" class="club-logo">
+                                <div class="player-details">
+                                    <span class="player-name">Matz Sels</span>
+                                    <span class="club-name">Nottm Forest</span>
+                                </div>
+                            </div>
+                            <div class="value">5</div>
+                        </div>
+                        <div class="stat-row">
+                            <div class="rank">5</div>
+                            <div class="player-info">
+                                <img src="./View/Liverpool.png" alt="Liverpool" class="club-logo">
+                                <div class="player-details">
+                                    <span class="player-name">Alison Becker</span>
+                                    <span class="club-name">Liverpool</span>
+                                </div>
+                            </div>
+                            <div class="value">3</div>
+                        </div>
+                        <div class="stat-row">
+                            <div class="rank">5</div>
+                            <div class="player-info">
+                                <img src="./View/CrystalPalace.png" alt="CrystalPalace" class="club-logo">
+                                <div class="player-details">
+                                    <span class="player-name">Dean Henderson</span>
+                                    <span class="club-name">Crystal Palace</span>
+                                </div>
+                            </div>
+                            <div class="value">3</div>
+                        </div>
+                        <div class="stat-row">
+                            <div class="rank">5</div>
+                            <div class="player-info">
+                                <img src="./View/Liverpool.png" alt="Liverpool" class="club-logo">
+                                <div class="player-details">
+                                    <span class="player-name">Caoimhín Kelleher</span>
+                                    <span class="club-name">Liverpool</span>
+                                </div>
+                            </div>
+                            <div class="value">3</div>
+                        </div>
+                        <div class="stat-row">
+                            <div class="rank">5</div>
+                            <div class="player-info">
+                                <img src="./View/NewcastleUnited.png" alt="NewcastleUnited" class="club-logo">
+                                <div class="player-details">
+                                    <span class="player-name">Nick Pope</span>
+                                    <span class="club-name">Newcastle</span>
+                                </div>
+                            </div>
+                            <div class="value">3</div>
+                        </div>
+                        <div class="stat-row">
+                            <div class="rank">5</div>
+                            <div class="player-info">
+                                <img src="./View/Chelsea.png" alt="Chelsea" class="club-logo">
+                                <div class="player-details">
+                                    <span class="player-name">Robert Sánchez</span>
+                                    <span class="club-name">Chelsea</span>
+                                </div>
+                            </div>
+                            <div class="value">3</div>
+                        </div>
+                        <div class="stat-row">
+                            <div class="rank">5</div>
+                            <div class="player-info">
+                                <img src="./View/TottenhamHotspur.png" alt="TottenhamHotspur" class="club-logo">
+                                <div class="player-details">
+                                    <span class="player-name">Guglielmo Vicario</span>
+                                    <span class="club-name">Spurs</span>
+                                </div>
+                            </div>
+                            <div class="value">3</div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</body>
+    </body>
 </html>
