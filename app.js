@@ -29,11 +29,10 @@ app.use(express.json());
 
 // Database connection
 const connection = mysql.createConnection({
-    host: process.env.DB_HOST || "localhost",
-    user: process.env.DB_USER || "root",
-    password: process.env.DB_PASSWORD || "",
-    database: process.env.DB_NAME || "PremierAccounts",
-    port: process.env.DB_PORT || 3306
+    host: "localhost",
+    user: "root",
+    password: "",
+    database: "PremierAccounts"
 });
 
 // Global authentication middleware
@@ -185,7 +184,5 @@ app.get("/login", (req, res) => {
     res.sendFile(path.join(__dirname, "public", "login.html"));
 });
 
-const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => {
-    console.log(`Server is running on port ${PORT}`);
-});
+app.listen(3000);
+console.log("running on port 3000...");
