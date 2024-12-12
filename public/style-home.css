@@ -1,8 +1,8 @@
 body {
     margin: 0;
     /* padding: 20px; */
-    background-color: #37003c;
     font-family: 'Times New Roman', Times, serif;
+    background: linear-gradient(to bottom right, #37003c, #b35af2);
 }
 
 .page-container {
@@ -107,6 +107,109 @@ body {
     font-size: 16px;
     line-height: 1.5;
 }
+
+/* ------------------------*/
+/* body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom right, #4c007e, #f9f9f9);
+    color: #333;
+} */
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.news-section {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+}
+
+.news-card {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.news-card:hover {
+    transform: translateY(-5px);
+}
+
+.news-image {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.news-content {
+    padding: 20px;
+}
+
+.news-title {
+    font-size: 24px;
+    color: #37003c;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.news-description {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.side-news {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.side-news-card {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+}
+
+.side-news-card:hover {
+    transform: translateY(-5px);
+}
+
+.side-news-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.side-news-content {
+    padding: 24px;
+    /* width: 100%;
+    box-sizing: border-box; */
+}
+
+.side-news-title {
+    font-size: 18px;
+    color: #37003c;
+    font-weight: bold;
+    margin: 1px;
+}
+
+.side-news-description {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* ------------------------*/
+
 .matchweek-table {
     width: 90%; /* Ensure the table takes full width */
 }
@@ -163,4 +266,43 @@ body {
 .news-video {
     width: 100%;
     height: 400px; /* Adjust as needed */
+}
+
+.horizontal-card {
+    display: flex;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+}
+
+.horizontal-card:hover {
+    transform: translateY(-5px);
+}
+
+.horizontal-card img {
+    width: 40%;
+    height: auto;
+    object-fit: cover;
+}
+
+.horizontal-card-content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.horizontal-card-title {
+    font-size: 22px;
+    color: #37003c;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.horizontal-card-description {
+    font-size: 18px;
+    color: #666;
+    line-height: 1.6;
 }
